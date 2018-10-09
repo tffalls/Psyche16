@@ -8,6 +8,18 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {DrawerNavigator, DrawerItems} from 'react-navigation';
+import {
+  Icon,
+  Button,
+  Container,
+  Header,
+  Content,
+  Left,
+  Body
+} from 'native-base';
+import HomeScreen from './HomeScreen';
+import SettingsScreen from './SettingsScreen';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,14 +32,42 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+     <MyApp/>
     );
   }
 }
+
+const CustomDrawerContentComponent = (props) => (
+  <Container>
+    <Header>
+      <Left>
+        <Icon
+          name="arrow-back"
+          onPress={() => props.navigation.closeDrawer()}
+        />
+      </Left>
+      <Body></Body>
+    </Header>
+    <Content>
+      <DrawerItems {...props}/>
+    </Content>
+  </Container>
+)
+
+const MyApp = DrawerNavigator({
+  Home: {
+    screen: HomeScreen
+  },
+  Settings: {
+    screen: SettingsScreen
+  }
+}, {
+    initialRouteName: 'Home',
+    contentComponent: CustomDrawerContentComponent,
+    drawerOpenRoute: 'openDrawer',
+    drawerCloseRoute: 'closeDrawer',
+    drawerToggleRoute: 'toggleDrawer'
+})
 
 const styles = StyleSheet.create({
   container: {
