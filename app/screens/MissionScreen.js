@@ -13,7 +13,7 @@ import {
     Left
 } from 'native-base';
 
-class SettingsScreen extends Component {
+class MissionScreen extends Component {
     render() {
         return (
            <Container>
@@ -30,11 +30,11 @@ class SettingsScreen extends Component {
                     alignItems: 'center',
                     justifyContent: 'center'
                }}>
-                   <Text>Settings Screen</Text>
+                   <Text>Mission Screen</Text>
                </Content>
            </Container>
 
         );
     }
 }
-export default SettingsScreen;
+export default MissionScreen;

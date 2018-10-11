@@ -18,8 +18,11 @@ import {
   Left,
   Body
 } from 'native-base';
-import HomeScreen from './HomeScreen';
-import SettingsScreen from './SettingsScreen';
+
+import HomeScreen from './app/screens/HomeScreen';
+import MissionScreen from './app/screens/MissionScreen';
+import TimelineScreen from './app/screens/TimelineScreen';
+import SocialMediaScreen from './app/screens/SocialMediaScreen';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -58,8 +61,14 @@ const MyApp = DrawerNavigator({
   Home: {
     screen: HomeScreen
   },
-  Settings: {
-    screen: SettingsScreen
+  Mission: {
+    screen: MissionScreen
+  },
+  Timeline: {
+    screen: TimelineScreen
+  },
+  'Social Media': {
+    screen: SocialMediaScreen
   }
 }, {
     initialRouteName: 'Home',
