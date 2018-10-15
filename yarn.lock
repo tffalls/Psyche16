@@ -4340,6 +4340,12 @@ react-lifecycles-compat@^3, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
+react-native-collapse-view@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-collapse-view/-/react-native-collapse-view-1.0.0.tgz#6f730aceb2ecfeecc6ff8b265ba05c4aee63a2ef"
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-dismiss-keyboard/-/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"
@@ -4362,6 +4368,12 @@ react-native-drawer@2.5.0:
   dependencies:
     prop-types "^15.5.8"
     tween-functions "^1.0.1"
+
+react-native-dropdown-menu@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-dropdown-menu/-/react-native-dropdown-menu-2.0.0.tgz#1d9e6614dc3799b79e3151f8a54fb2d83c7d899f"
+  dependencies:
+    prop-types "^15.6.1"
 
 react-native-easy-grid@0.2.0:
   version "0.2.0"
