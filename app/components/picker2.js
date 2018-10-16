@@ -27,19 +27,19 @@ export default class Demo extends Component {
     _renderCollapseView = (collapse) => {
         return (
             <View style={styles.collapseView}>
-                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Overview')}>
                     Overview
                 </Text>
-                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('The Asteroid')}>
                     The Asteroid
                 </Text>
-                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('The Spacecraft')}>
                     The Spacecraft
                 </Text>
-                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Instruments and Science')}>
                     Instruments and Science
                 </Text>
-                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('The Team')}>
                     The Team
                 </Text>
             </View>
