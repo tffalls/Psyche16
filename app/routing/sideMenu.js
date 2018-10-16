@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import styles from './sideMenu.style';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
+import {Header, Left, Icon} from 'native-base';
+import {DrawerNavigator, DrawerItems} from 'react-navigation';
 import PickerComponent from  '../components/picker2'
 
 class sideMenu extends Component {
@@ -21,34 +23,39 @@ class sideMenu extends Component {
         return (
             <View style={styles.container}>
                 <ScrollView>
-                    <View>
-                        <Text style={styles.sectionHeadingStyle}>
-                            Section 1
+                    <Header>
+                        <Left>
+                            <Icon
+                                name="arrow-back"
+                                onPress={() => this.props.navigation.closeDrawer()}
+                            />
+                        </Left>
+                    </Header>
+                    <View style={styles.navSectionStyle}>
+                        <Text
+                            style={styles.view}
+                            onPress={this.navigateToScreen('Home')}
+                        >
+                            Home
                         </Text>
-                        <View style={styles.navSectionStyle}>
-                            {/* <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Page1')}>
-                                Page1
-                            </Text> */}
-                            <PickerComponent propsRoute={propsRoute}/>
-                        </View>
-                    </View>
-                    <View>
-                        <Text style={styles.sectionHeadingStyle}>
-                            Section 2
+
+                        <PickerComponent propsRoute={propsRoute} name="Mission"/>
+                            
+                        <Text 
+                            style={styles.view}
+                            onPress={this.navigateToScreen('Timeline')}
+                        >
+                            Timeline
                         </Text>
-                        <View style={styles.navSectionStyle}>
-                            <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Mission')}>
-                                Page2
-                            </Text>
-                            <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Page3')}>
-                                Page3
-                            </Text>
-                        </View>
+                        
+                        <Text
+                            style={styles.view}
+                            onPress={this.navigateToScreen('Social Media')}
+                        >
+                            Social Media
+                        </Text>
                     </View>
                 </ScrollView>
-                <View style={styles.footerContainer}>
-                    <Text>This is my fixed footer</Text>
-                </View>
             </View>
         );
     }

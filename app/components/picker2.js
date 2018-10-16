@@ -1,6 +1,7 @@
 import DropdownMenu from 'react-native-dropdown-menu';  
 import React, { Component } from 'react';
-import { ScrollView, Text, View, StyleSheet, Button } from 'react-native';
+import { ScrollView, Text, View, StyleSheet, Button, Platform } from 'react-native';
+import {Icon} from 'native-base';
 import CollapseView from 'react-native-collapse-view';
 import { NavigationActions } from 'react-navigation';
 import stylesNav from '../routing/sideMenu.style';
@@ -27,7 +28,19 @@ export default class Demo extends Component {
         return (
             <View style={styles.collapseView}>
                 <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
-                    Home
+                    Overview
+                </Text>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                    The Asteroid
+                </Text>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                    The Spacecraft
+                </Text>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                    Instruments and Science
+                </Text>
+                <Text style={stylesNav.navItemStyle} onPress={this.navigateToScreen('Home')}>
+                    The Team
                 </Text>
             </View>
         )
@@ -35,7 +48,14 @@ export default class Demo extends Component {
     _renderView = (collapse) => {
         return (
             <View style={styles.view}>
-                <Text>Toggle {collapse ? 'on' : 'off'}</Text>
+                {/* <Text>Toggle {collapse ? 'on' : 'off'}</Text> */}
+                {/* <Icon
+                    name = {collapse ? 'md-remove' : 'md-add'}
+                    style={styles.iconStyle}
+                /> */}
+
+                <Text>{this.props.name}</Text>
+
             </View>
         )
     }
@@ -56,14 +76,10 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#009688',
     },
-    view: {
-        height: 50,
-        padding: 20,
-        justifyContent: 'center',
-        backgroundColor: '#ffffff',
-    },
     collapseView: {
-        padding: 20
+        padding: 10,
+        paddingLeft: 30,
+        flex: 1
     },
     iconView: {
         padding: 20,
@@ -71,5 +87,27 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         backgroundColor: '#ffffff',
-    }
+    },
+    iconStyle: {
+        width: 20,
+        height: 20
+    },
+    ...Platform.select({
+        ios: {
+            view: {
+                height: 60,
+                padding: 20,
+                justifyContent: 'center',
+                backgroundColor: '#ffffff',
+            }
+        },
+        android: {
+            view: {
+                height: 50,
+                padding: 20,
+                justifyContent: 'center',
+                backgroundColor: '#ffffff',
+            }
+        },
+    }),  
 });
