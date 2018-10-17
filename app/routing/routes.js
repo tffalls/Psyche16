@@ -39,9 +39,9 @@ export default DrawerNavigator({
         screen: TeamScreen
     }
 }, {
-        initialRouteName: 'Home',
-        contentComponent: sideMenu,
-        drawerOpenRoute: 'openDrawer',
-        drawerCloseRoute: 'closeDrawer',
-        drawerToggleRoute: 'toggleDrawer'
-    })
+    initialRouteName: 'Home',
+    contentComponent: sideMenu,
+    drawerOpenRoute: 'openDrawer',
+    drawerCloseRoute: 'closeDrawer',
+    drawerToggleRoute: 'toggleDrawer',
+})

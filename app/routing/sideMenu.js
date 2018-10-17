@@ -31,7 +31,7 @@ class sideMenu extends Component {
                             />
                         </Left>
                     </Header>
-                    <View style={styles.navSectionStyle}>
+                    <View style={styles.navSectionStyle} onPress={() => this.navigation.closeDrawer()}>
                         <Text
                             style={styles.view}
                             onPress={this.navigateToScreen('Home')}

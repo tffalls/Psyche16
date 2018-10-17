@@ -19,12 +19,6 @@ import {
   Body
 } from 'native-base';
 import Routes from './app/routing/routes'
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -35,22 +29,22 @@ export default class App extends Component<Props> {
   }
 }
 
-const CustomDrawerContentComponent = (props) => (
-  <Container>
-    <Header>
-      <Left>
-        <Icon
-          name="arrow-back"
-          onPress={() => props.navigation.closeDrawer()}
-        />
-      </Left>
-      <Body></Body>
-    </Header>
-    <Content>
-      <DrawerItems {...props}/>
-    </Content>
-  </Container>
-)
+// const CustomDrawerContentComponent = (props) => (
+//   <Container>
+//     <Header>
+//       <Left>
+//         <Icon
+//           name="arrow-back"
+//           onPress={() => props.navigation.closeDrawer()}
+//         />
+//       </Left>
+//       <Body></Body>
+//     </Header>
+//     <Content>
+//       <DrawerItems {...props}/>
+//     </Content>
+//   </Container>
+// )
 
 const styles = StyleSheet.create({
   container: {
