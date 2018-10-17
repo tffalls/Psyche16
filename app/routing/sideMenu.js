@@ -5,7 +5,7 @@ import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
 import {Header, Left, Icon} from 'native-base';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
-import PickerComponent from  '../components/picker2'
+import PickerComponent from  '../components/DrawerPicker'
 
 class sideMenu extends Component {
     navigateToScreen = (route) => () => {

@@ -1,4 +1,3 @@
-import DropdownMenu from 'react-native-dropdown-menu';  
 import React, { Component } from 'react';
 import { ScrollView, Text, View, StyleSheet, Button, Platform } from 'react-native';
 import {Icon} from 'native-base';
@@ -6,12 +5,12 @@ import CollapseView from 'react-native-collapse-view';
 import { NavigationActions } from 'react-navigation';
 import stylesNav from '../routing/sideMenu.style';
 
-export default class Demo extends Component {
+export default class DrawerPicker extends Component {
     navigateToScreen = (route) => () => {
         const navigateAction = NavigationActions.navigate({
             routeName: route
         });
-        //THIS LINE IS VEYR IMPORTANT YOU RETARDS fuck spelling btw 
+        // THIS LINE IS VERY IMPORTANT
         this.props.propsRoute.navigation.dispatch(navigateAction);
     }
     componentDidMount(){
@@ -20,10 +19,8 @@ export default class Demo extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            text: ''
-        };
     }
+
     _renderCollapseView = (collapse) => {
         return (
             <View style={styles.collapseView}>
@@ -48,14 +45,12 @@ export default class Demo extends Component {
     _renderView = (collapse) => {
         return (
             <View style={styles.view}>
-                {/* <Text>Toggle {collapse ? 'on' : 'off'}</Text> */}
-                {/* <Icon
-                    name = {collapse ? 'md-remove' : 'md-add'}
-                    style={styles.iconStyle}
-                /> */}
-
-                <Text>{this.props.name}</Text>
-
+                <View style={styles.iconView}>
+                    <Text>{this.props.name}</Text>
+                    <Icon
+                        name = {collapse ? 'md-arrow-dropup' : 'md-arrow-dropdown'}
+                    />
+                </View>
             </View>
         )
     }
@@ -82,15 +77,10 @@ const styles = StyleSheet.create({
         flex: 1
     },
     iconView: {
-        padding: 20,
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
         backgroundColor: '#ffffff',
-    },
-    iconStyle: {
-        width: 20,
-        height: 20
     },
     ...Platform.select({
         ios: {
