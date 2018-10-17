@@ -46,7 +46,11 @@ export default class DrawerPicker extends Component {
         return (
             <View style={styles.view}>
                 <View style={styles.iconView}>
-                    <Text>{this.props.name}</Text>
+                    <Text
+                        style={styles.font}
+                    >
+                        {this.props.name}
+                    </Text>
                     <Icon
                         name = {collapse ? 'md-arrow-dropup' : 'md-arrow-dropdown'}
                     />
@@ -81,6 +85,13 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         backgroundColor: '#ffffff',
+        fontFamily: 'Helvetica',
+        fontWeight: 'bold'
+    },
+    font: {
+        fontFamily: 'Helvetica',
+        fontWeight: 'bold',
+        fontSize: 16
     },
     ...Platform.select({
         ios: {
@@ -88,7 +99,7 @@ const styles = StyleSheet.create({
                 height: 60,
                 padding: 20,
                 justifyContent: 'center',
-                backgroundColor: '#ffffff',
+                backgroundColor: '#ffffff'
             }
         },
         android: {
@@ -96,7 +107,7 @@ const styles = StyleSheet.create({
                 height: 50,
                 padding: 20,
                 justifyContent: 'center',
-                backgroundColor: '#ffffff',
+                backgroundColor: '#ffffff'
             }
         },
     }),  
