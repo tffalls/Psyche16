@@ -9,6 +9,7 @@ import {
     Icon,
     Button,
     Container,
+    Body,
     Header,
     Content,
     Left
@@ -25,6 +26,7 @@ class HomeScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
+                    <Body></Body>
                </Header>
                <Content contentContainerStyle={{
                     flex: 1,

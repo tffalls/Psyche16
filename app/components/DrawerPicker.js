@@ -93,22 +93,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 16
     },
-    ...Platform.select({
-        ios: {
-            view: {
-                height: 60,
-                padding: 20,
-                justifyContent: 'center',
-                backgroundColor: '#ffffff'
-            }
-        },
-        android: {
-            view: {
-                height: 50,
-                padding: 20,
-                justifyContent: 'center',
-                backgroundColor: '#ffffff'
-            }
-        },
-    }),  
+    view: {
+        height: 60,
+        padding: 20,
+        justifyContent: 'center',
+        backgroundColor: '#ffffff'
+    }, 
 });

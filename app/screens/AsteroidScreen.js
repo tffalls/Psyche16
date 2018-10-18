@@ -10,7 +10,8 @@ import {
     Container,
     Header,
     Content,
-    Left
+    Left,
+    Body
 } from 'native-base';
 
 class AsteroidScreen extends Component {
@@ -24,6 +25,7 @@ class AsteroidScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
+                    <Body></Body>
                </Header>
                <Content contentContainerStyle={{
                     flex: 1,

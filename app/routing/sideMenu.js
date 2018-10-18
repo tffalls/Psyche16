@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styles from './sideMenu.style';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
-import {Header, Left, Icon} from 'native-base';
+import {Body, Header, Left, Icon} from 'native-base';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
 import PickerComponent from  '../components/DrawerPicker'
 
@@ -30,6 +30,7 @@ class sideMenu extends Component {
                                 onPress={() => this.props.navigation.closeDrawer()}
                             />
                         </Left>
+                        <Body></Body>
                     </Header>
                     <View style={styles.navSectionStyle}>
                         <Text

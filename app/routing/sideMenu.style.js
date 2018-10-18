@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 
 export default {
     container: {
-        paddingTop: 20,
+        //paddingTop: 20,
         flex: 1
     },
     navItemStyle: {
@@ -19,28 +19,13 @@ export default {
         padding: 20,
         backgroundColor: 'lightgrey'
     },
-    ...Platform.select({
-        ios: {
-            view: {
-                height: 60,
-                padding: 20,
-                justifyContent: 'center',
-                backgroundColor: '#ffffff',
-                fontFamily: 'Helvetica',
-                fontWeight: 'bold',
-                fontSize: 16
-            }
-        },
-        android: {
-            view: {
-                height: 50,
-                padding: 20,
-                justifyContent: 'center',
-                backgroundColor: '#ffffff',
-                fontFamily: 'Helvetica',
-                fontWeight: 'bold',
-                fontSize: 16
-            }
-        },
-    }),  
+    view: {
+        height: 60,
+        padding: 20,
+        justifyContent: 'center',
+        backgroundColor: '#ffffff',
+        fontFamily: 'Helvetica',
+        fontWeight: 'bold',
+        fontSize: 16
+    }, 
 };
