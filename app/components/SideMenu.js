@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
-import {Body, Header, Left, Icon} from 'native-base';
+import {Body, Header, Left, Icon, Content} from 'native-base';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
 import PickerComponent from  '../components/DrawerPicker'
 
@@ -13,6 +13,7 @@ class SideMenu extends Component {
         const navigateAction = NavigationActions.navigate({
             routeName: route
         });
+        //console.log(this.state.activeItemKey);
         this.props.navigation.dispatch(navigateAction);
     }
 
@@ -31,7 +32,7 @@ class SideMenu extends Component {
                         </Left>
                         <Body></Body>
                     </Header>
-                    <View style={styles.navSectionStyle}>
+                    <Content style={styles.navSectionStyle}>
                         <Text
                             style={styles.view}
                             onPress={this.navigateToScreen('Home')}
@@ -54,7 +55,7 @@ class SideMenu extends Component {
                         >
                             Social Media
                         </Text>
-                    </View>
+                    </Content>
                 </ScrollView>
             </View>
         );
