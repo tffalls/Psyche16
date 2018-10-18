@@ -8,7 +8,7 @@ import SpacecraftScreen from '../screens/SpacecraftScreen';
 import ScienceScreen from '../screens/ScienceScreen';
 import TeamScreen from '../screens/TeamScreen';
 import { DrawerNavigator, DrawerItems } from 'react-navigation';
-import sideMenu from './sideMenu'
+import SideMenu from '../components/SideMenu'
 
 export default DrawerNavigator({
     Home: {
@@ -40,7 +40,7 @@ export default DrawerNavigator({
     }
 }, {
     initialRouteName: 'Home',
-    contentComponent: sideMenu,
+    contentComponent: SideMenu,
     drawerOpenRoute: 'openDrawer',
     drawerCloseRoute: 'closeDrawer',
     drawerToggleRoute: 'toggleDrawer',

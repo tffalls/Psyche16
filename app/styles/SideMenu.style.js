@@ -2,7 +2,6 @@ import { Platform } from 'react-native';
 
 export default {
     container: {
-        //paddingTop: 20,
         flex: 1
     },
     navItemStyle: {

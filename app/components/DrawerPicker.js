@@ -3,7 +3,7 @@ import { ScrollView, Text, View, StyleSheet, Button, Platform } from 'react-nati
 import {Icon} from 'native-base';
 import CollapseView from 'react-native-collapse-view';
 import { NavigationActions } from 'react-navigation';
-import stylesNav from '../routing/sideMenu.style';
+import stylesNav from '../styles/SideMenu.style';
 
 export default class DrawerPicker extends Component {
     navigateToScreen = (route) => () => {

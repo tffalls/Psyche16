@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import styles from './sideMenu.style';
+import styles from '../styles/SideMenu.style';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
 import {Body, Header, Left, Icon} from 'native-base';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
 import PickerComponent from  '../components/DrawerPicker'
 
-class sideMenu extends Component {
+class SideMenu extends Component {
     navigateToScreen = (route) => () => {
         const navigateAction = NavigationActions.navigate({
             routeName: route
@@ -62,8 +62,8 @@ class sideMenu extends Component {
     }
 }
 
-sideMenu.propTypes = {
+SideMenu.propTypes = {
     navigation: PropTypes.object
 };
 
-export default sideMenu;
+export default SideMenu;
