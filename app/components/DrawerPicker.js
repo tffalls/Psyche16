@@ -3,6 +3,7 @@ import { ScrollView, Text, View, StyleSheet, Button, Platform } from 'react-nati
 import {Icon} from 'native-base';
 import CollapseView from 'react-native-collapse-view';
 import { NavigationActions } from 'react-navigation';
+
 import stylesNav from '../styles/SideMenu.style';
 
 export default class DrawerPicker extends Component {
@@ -52,6 +53,7 @@ export default class DrawerPicker extends Component {
                         {this.props.name}
                     </Text>
                     <Icon
+                        style={styles.icon}
                         name = {collapse ? 'md-arrow-dropup' : 'md-arrow-dropdown'}
                     />
                 </View>
@@ -84,19 +86,20 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        backgroundColor: '#ffffff',
-        fontFamily: 'Helvetica',
-        fontWeight: 'bold'
+    },
+    icon: {
+        color: 'white'
     },
     font: {
         fontFamily: 'Helvetica',
         fontWeight: 'bold',
-        fontSize: 16
+        fontSize: 16,
+        color: 'white'
     },
     view: {
         height: 60,
         padding: 20,
         justifyContent: 'center',
-        backgroundColor: '#ffffff'
+        backgroundColor: 'black'
     }, 
 });

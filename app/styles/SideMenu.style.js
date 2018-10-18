@@ -2,7 +2,8 @@ import { Platform } from 'react-native';
 
 export default {
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor : 'black'
     },
     navItemStyle: {
         padding: 10
@@ -10,21 +11,29 @@ export default {
     navSectionStyle: {
         backgroundColor: '#ed5b68ff'
     },
-    sectionHeadingStyle: {
-        paddingVertical: 10,
-        paddingHorizontal: 5
-    },
-    footerContainer: {
-        padding: 20,
-        backgroundColor: 'lightgrey'
-    },
     view: {
         height: 60,
         padding: 20,
         justifyContent: 'center',
-        backgroundColor: '#ffffff',
+        backgroundColor: 'black',
         fontFamily: 'Helvetica',
         fontWeight: 'bold',
-        fontSize: 16
+        fontSize: 16,
+        color: 'white'
+    },
+    navIconStyle: {
+        paddingTop: 12,
+        paddingBottom: 10,
+        paddingLeft: 5,
+        paddingRight: 5,
+        color: 'white'
+    },
+    sectionHeadingStyle: {
+        backgroundColor: 'black'
+    },
+    // not used currently
+    footerContainer: {
+        padding: 20,
+        backgroundColor: 'lightgrey'
     }, 
 };
