@@ -4,7 +4,6 @@ import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
 import {Accordion, Body, Header, Left, Icon, Content} from 'native-base';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
-import PickerComponent from  '../components/DrawerPicker'
 
 import styles from '../styles/SideMenu.style';
 
@@ -43,7 +42,6 @@ class SideMenu extends Component {
     }
 
     render() {
-        //const propsRoute = this.props
         return (
             <View style={styles.container}>
                 <ScrollView>
@@ -65,8 +63,6 @@ class SideMenu extends Component {
                             Home
                         </Text>
 
-                        {/* <PickerComponent propsRoute={propsRoute} name="Mission"/> */}
-                            
                         <Accordion
                             headerStyle = {styles.accordionHeaderStyle}
                             style = {styles.navSectionStyle}
