@@ -31,6 +31,24 @@ export default {
     sectionHeadingStyle: {
         backgroundColor: 'black'
     },
+    collapseView: {
+        padding: 10,
+        paddingLeft: 30,
+        flex: 1
+    },
+    icon: {
+        color: 'white'
+    },
+    accordionHeaderText: {
+        fontFamily: 'Helvetica',
+        fontWeight: 'bold',
+        fontSize: 16,
+        color: 'white',
+    },
+    accordionHeaderStyle: {
+        padding: 16,
+        backgroundColor: 'black'
+    },
     // not used currently
     footerContainer: {
         padding: 20,

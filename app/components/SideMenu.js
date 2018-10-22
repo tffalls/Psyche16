@@ -2,23 +2,48 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
-import {Body, Header, Left, Icon, Content} from 'native-base';
+import {Accordion, Body, Header, Left, Icon, Content} from 'native-base';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
 import PickerComponent from  '../components/DrawerPicker'
 
 import styles from '../styles/SideMenu.style';
+
+const dataArray = [
+    {title: <Text style={styles.accordionHeaderText}>Mission</Text>}
+];
 
 class SideMenu extends Component {
     navigateToScreen = (route) => () => {
         const navigateAction = NavigationActions.navigate({
             routeName: route
         });
-        //console.log(this.state.activeItemKey);
         this.props.navigation.dispatch(navigateAction);
     }
 
+    renderMissionContent = () => {
+        return (
+            <View style={styles.collapseView}>
+                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Overview')}>
+                    Overview
+                </Text>
+                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Asteroid')}>
+                    The Asteroid
+                </Text>
+                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Spacecraft')}>
+                    The Spacecraft
+                </Text>
+                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Instruments and Science')}>
+                    Instruments and Science
+                </Text>
+                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Team')}>
+                    The Team
+                </Text>
+            </View>
+        )
+    }
+
     render() {
-        const propsRoute = this.props
+        //const propsRoute = this.props
         return (
             <View style={styles.container}>
                 <ScrollView>
@@ -40,8 +65,20 @@ class SideMenu extends Component {
                             Home
                         </Text>
 
-                        <PickerComponent propsRoute={propsRoute} name="Mission"/>
+                        {/* <PickerComponent propsRoute={propsRoute} name="Mission"/> */}
                             
+                        <Accordion
+                            headerStyle = {styles.accordionHeaderStyle}
+                            style = {styles.navSectionStyle}
+                            dataArray = {dataArray}
+                            expanded = {0}
+                            icon = 'md-arrow-dropdown'
+                            expandedIcon = 'md-arrow-dropup'
+                            iconStyle = {styles.icon}
+                            expandedIconStyle = {styles.icon}
+                            renderContent = {this.renderMissionContent}
+                        />
+
                         <Text 
                             style={styles.view}
                             onPress={this.navigateToScreen('Timeline')}
