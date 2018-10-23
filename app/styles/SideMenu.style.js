@@ -56,5 +56,9 @@ export default {
     }, 
     highlightedPage: {
         color: '#ed5b68ff',
-    }
+    },
+    navItemStyleAccordian: {
+        padding: 10,
+        color: 'white',
+    },
 };
