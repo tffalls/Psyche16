@@ -54,4 +54,7 @@ export default {
         padding: 20,
         backgroundColor: 'lightgrey'
     }, 
+    highlightedPage: {
+        color: '#ed5b68ff',
+    }
 };

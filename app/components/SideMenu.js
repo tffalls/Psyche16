@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { NavigationActions } from 'react-navigation';
 import { ScrollView, Text, View } from 'react-native';
 import {Accordion, Body, Header, Left, Icon, Content} from 'native-base';
-import {DrawerNavigator, DrawerItems} from 'react-navigation';
+import {DrawerNavigator, DrawerItems, withNavigationFocus} from 'react-navigation';
 
 import styles from '../styles/SideMenu.style';
 
@@ -40,6 +40,36 @@ class SideMenu extends Component {
             </View>
         )
     }
+    checkFocus(){
+        console.log("Check Focus()")
+        const didBlurSubscription = this.props.navigation.addListener(
+            'didBlur',
+            payload => {
+              console.debug('didBlur', payload);
+            }
+          );
+          
+          // Remove the listener when you are done
+          didBlurSubscription.remove();
+        if(this.props.navigation.isFocused){
+            return (
+                // <Text style={styles.highlightedPage}>
+                //     {console.log("Is this focused true?", this.props.navigation.isFocused())}
+                //     Home
+                // </Text>
+                <Text>{this.props.isFocused ? 'Focused' : 'Not focused'}</Text>
+            )
+        }
+        else{
+            return (
+                <Text>{this.props.isFocused ? 'Focused' : 'Not focused'}</Text>
+                // <Text>
+                //         {console.log("Is this focused true?", this.props.navigation.isFocused())}
+                //         Home
+                // </Text>
+            )
+        }
+    }
 
     render() {
         return (
@@ -58,9 +88,15 @@ class SideMenu extends Component {
                     <Content style={styles.navSectionStyle}>
                         <Text
                             style={styles.view}
+                            // style={styles.highlightedPage}
                             onPress={this.navigateToScreen('Home')}
                         >
-                            Home
+                            {this.checkFocus()}
+                            {/* <Text style={styles.highlightedPage}>
+                            {console.log("Is this focused true?", this.props.navigation.isFocused())}
+                                Home
+                            </Text> */}
+                            {/* Home */}
                         </Text>
 
                         <Accordion
@@ -99,4 +135,4 @@ SideMenu.propTypes = {
     navigation: PropTypes.object
 };
 
-export default SideMenu;
+export default withNavigationFocus(SideMenu);
