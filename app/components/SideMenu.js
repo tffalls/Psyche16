@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { NavigationActions } from 'react-navigation';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, ImageBackground } from 'react-native';
 import {Accordion, Body, Header, Left, Icon, Content} from 'native-base';
 import {DrawerNavigator, DrawerItems, withNavigationFocus} from 'react-navigation';
 
@@ -62,25 +62,31 @@ class SideMenu extends Component {
     }
     renderMissionContent = () => {
         return (
-            <View style={styles.collapseView}>
-                <Text style={this.state.overView ? styles.navItemStyle : styles.navItemStyleAccordian} onPress={this.myNavigateToScreen('Overview')}>
-                    {/* {this.checkFocusAcordian("Overview", 4)} */}
-                    {console.log("Color", this.state.toggleColor)}
-                    Overview
-                </Text>
-                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Asteroid')}>
-                    The Asteroid
-                </Text>
-                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Spacecraft')}>
-                    The Spacecraft
-                </Text>
-                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Instruments and Science')}>
-                    Instruments and Science
-                </Text>
-                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Team')}>
-                    The Team
-                </Text>
-            </View>
+            <ImageBackground
+                source = {require('../assets/PsycheGradient.png')}
+                style = {{
+                    width: '100%'                }}
+            >
+                <View style={styles.collapseView}>
+                    <Text style={this.state.overView ? styles.navItemStyle : styles.navItemStyleAccordian} onPress={this.myNavigateToScreen('Overview')}>
+                        {/* {this.checkFocusAcordian("Overview", 4)} */}
+                        {console.log("Color", this.state.toggleColor)}
+                        Overview
+                    </Text>
+                    <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Asteroid')}>
+                        The Asteroid
+                    </Text>
+                    <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Spacecraft')}>
+                        The Spacecraft
+                    </Text>
+                    <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Instruments and Science')}>
+                        Instruments and Science
+                    </Text>
+                    <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Team')}>
+                        The Team
+                    </Text>
+                </View>
+            </ImageBackground>
         )
     }
     checkFocus(routeName, routeIndex){
@@ -138,14 +144,14 @@ class SideMenu extends Component {
                         </Left>
                         <Body></Body>
                     </Header>
-                    <Content style={styles.navSectionStyle}>
+                    <Content>
                         <Text
                             style={styles.view}
                             onPress={this.navigateToScreen('Home')}
                         >
                             {this.checkFocus("Home", 0)}
                         </Text>
-
+                    
                         <Accordion
                             headerStyle = {styles.accordionHeaderStyle}
                             style = {styles.navSectionStyle}

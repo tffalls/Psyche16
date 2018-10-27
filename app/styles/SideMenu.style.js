@@ -9,7 +9,7 @@ export default {
         padding: 10
     },
     navSectionStyle: {
-        backgroundColor: '#ed5b68ff'
+        backgroundColor: 'transparent'
     },
     view: {
         height: 60,
@@ -55,7 +55,7 @@ export default {
         backgroundColor: 'lightgrey'
     }, 
     highlightedPage: {
-        color: '#ed5b68ff',
+        color: '#f79f27ff',
     },
     navItemStyleAccordian: {
         padding: 10,
