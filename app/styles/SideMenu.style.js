@@ -6,7 +6,8 @@ export default {
         backgroundColor : 'black'
     },
     navItemStyle: {
-        padding: 10
+        padding: 10,
+        color: "black"
     },
     navSectionStyle: {
         backgroundColor: 'transparent'

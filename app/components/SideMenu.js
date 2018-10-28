@@ -65,7 +65,8 @@ class SideMenu extends Component {
             <ImageBackground
                 source = {require('../assets/PsycheGradient.png')}
                 style = {{
-                    width: '100%'                }}
+                    width: '100%'
+                }}
             >
                 <View style={styles.collapseView}>
                     <Text style={this.state.overView ? styles.navItemStyle : styles.navItemStyleAccordian} onPress={this.myNavigateToScreen('Overview')}>

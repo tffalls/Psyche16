@@ -30,23 +30,6 @@ export default class App extends Component<Props> {
   }
 }
 
-// const CustomDrawerContentComponent = (props) => (
-//   <Container>
-//     <Header>
-//       <Left>
-//         <Icon
-//           name="arrow-back"
-//           onPress={() => props.navigation.closeDrawer()}
-//         />
-//       </Left>
-//       <Body></Body>
-//     </Header>
-//     <Content>
-//       <DrawerItems {...props}/>
-//     </Content>
-//   </Container>
-// )
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -44,11 +44,4 @@ export default DrawerNavigator({
     drawerOpenRoute: 'openDrawer',
     drawerCloseRoute: 'closeDrawer',
     drawerToggleRoute: 'toggleDrawer',
-    // contentOptions: {
-    //     labelStyle: {
-    //         activeLabelStyle:{
-    //             color:  '#e91e63',
-    //         }
-    //     }
-    // }
 })
