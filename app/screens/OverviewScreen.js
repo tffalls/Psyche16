@@ -80,7 +80,38 @@ class OverviewScreen extends Component {
                             </CardItem>
                         </Card>
 
-                        <DeckSwiper
+                        <Card style={styles.card}>
+                            <CardItem style={styles.cardTitle}>
+                                <Text style={styles.cardTitleText}>Trajectory</Text>
+                            </CardItem>
+                            <CardItem style={styles.cardItemDark}>
+                                <Body>
+                                    <Image source={require('../assets/astrofallsOne.png')} style={styles.cardImage}/>
+                                    <Text style={styles.cardBodyTextLight}>
+                                        The Psyche spacecraft is targeted to launch in summer 2022 and travel to the asteroid using solar-electric 
+                                        (low-thrust) propulsion, arriving in 2026, following a Mars flyby and gravity-assist in 2023. After arrival, 
+                                        the mission plan calls for 21 months spent at the asteroid, mapping it and studying its properties.
+                                    </Text>
+                                    </Body>
+                            </CardItem>
+                        </Card>
+
+                        <Card style={styles.card}>
+                            <CardItem style={styles.cardTitle}>
+                                <Text style={styles.cardTitleText}>Orbit</Text>
+                            </CardItem>
+                            <CardItem style={styles.cardItemDark}>
+                                <Body>
+                                    <Image source={require('../assets/astrofallsOne.png')} style={styles.cardImage}/>
+                                    <Text style={styles.cardBodyTextLight}>
+                                        Once the spacecraft arrives at the asteroid in 2026, plans call for it to spend 21 months
+                                        at the asteroid, performing science operations from four staging orbits, which become successively closer.
+                                    </Text>
+                                    </Body>
+                            </CardItem>
+                        </Card>
+
+                        {/* <DeckSwiper
                             dataSource={trajectoryCards}
                             renderItem={item =>
                             <Card style={styles.deckCard}>
@@ -126,7 +157,7 @@ class OverviewScreen extends Component {
                                 </CardItem>
                             </Card>
                             }
-                        />
+                        /> */}
                         
                     </View>
                 </Content>
