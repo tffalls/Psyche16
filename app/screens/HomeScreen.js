@@ -25,7 +25,7 @@ class HomeScreen extends Component {
                     <Left>
                         <Icon
                             style={headerStyle.navIconStyle}
-                            name="ios-menu"
+                            name='ios-menu'
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>

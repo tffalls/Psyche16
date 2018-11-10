@@ -3,11 +3,11 @@ import { Platform } from 'react-native';
 export default {
     container: {
         flex: 1,
-        backgroundColor : 'black'
+        backgroundColor : '#312245ff'
     },
     navItemStyle: {
         padding: 10,
-        color: "black"
+        color: 'black'
     },
     navSectionStyle: {
         backgroundColor: 'transparent'
@@ -16,7 +16,7 @@ export default {
         height: 60,
         padding: 20,
         justifyContent: 'center',
-        backgroundColor: 'black',
+        backgroundColor: '#312245ff',
         fontFamily: 'Helvetica',
         fontWeight: 'bold',
         fontSize: 16,
@@ -27,10 +27,11 @@ export default {
         paddingBottom: 10,
         paddingLeft: 5,
         paddingRight: 5,
-        color: 'white'
+        color: '#f79f27ff'
     },
     sectionHeadingStyle: {
-        backgroundColor: 'black'
+        backgroundColor: '#312245ff',
+        borderBottomWidth: 0
     },
     collapseView: {
         padding: 10,
@@ -38,7 +39,7 @@ export default {
         flex: 1
     },
     icon: {
-        color: 'white'
+        color: '#f79f27ff'
     },
     accordionHeaderText: {
         fontFamily: 'Helvetica',
@@ -48,7 +49,7 @@ export default {
     },
     accordionHeaderStyle: {
         padding: 16,
-        backgroundColor: 'black'
+        backgroundColor: '#312245ff'
     },
     // not used currently
     footerContainer: {

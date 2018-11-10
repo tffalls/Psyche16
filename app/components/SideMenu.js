@@ -18,7 +18,7 @@ class SideMenu extends Component {
             toggleColor: 0,
             whiteAccordianText: styles.navItemStyleAccordian,
             normalAccordianText: styles.navItemStyle,
-            oldRoute: "",
+            oldRoute: '',
             overView: 1,
             theAsteroid: 0,
             theSpacecraft: 0,
@@ -33,7 +33,7 @@ class SideMenu extends Component {
         this.props.navigation.dispatch(navigateAction);
     }
     toggleColor = () => () => {
-        console.log("Here", routeName)
+        console.log('Here', routeName)
         switch(routeName){
             case 'Overview':
                 this.setState({
@@ -52,7 +52,7 @@ class SideMenu extends Component {
         this.setState({
             oldRoute: route
         }, () => {
-            console.log("ASDADADADAD", this.state.oldRoute)
+            console.log('ASDADADADAD', this.state.oldRoute)
         })
         
         const navigateAction = NavigationActions.navigate({
@@ -70,8 +70,8 @@ class SideMenu extends Component {
             >
                 <View style={styles.collapseView}>
                     <Text style={this.state.overView ? styles.navItemStyle : styles.navItemStyleAccordian} onPress={this.myNavigateToScreen('Overview')}>
-                        {/* {this.checkFocusAcordian("Overview", 4)} */}
-                        {console.log("Color", this.state.toggleColor)}
+                        {/* {this.checkFocusAcordian('Overview', 4)} */}
+                        {console.log('Color', this.state.toggleColor)}
                         Overview
                     </Text>
                     <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Asteroid')}>
@@ -91,11 +91,11 @@ class SideMenu extends Component {
         )
     }
     checkFocus(routeName, routeIndex){
-        console.log("Check FocusAccordian()")
+        console.log('Check FocusAccordian()')
         if(this.props.navigation.state.index === routeIndex){
             return (
                 <Text style={styles.highlightedPage}>
-                            {/* {console.log("Is this focused true?", this.props.navigation.isFocused())} */}
+                            {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
                             {routeName}
                 </Text>
             )
@@ -103,18 +103,18 @@ class SideMenu extends Component {
         else{
             return (
                 <Text>
-                        {/* {console.log("Is this focused true?", this.props.navigation.isFocused())} */}
+                        {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
                         {routeName}
                 </Text>
             )
         }
     }
     checkFocusAcordian(routeName, routeIndex){
-        // console.log("Check Focus()")
+        // console.log('Check Focus()')
         if(this.props.navigation.state.index === routeIndex){
             return (
                 <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Overview')}>
-                            {/* {console.log("Is this focused true?", this.props.navigation.isFocused())} */}
+                            {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
                             {/* {routeName} */}
                             Overview
                 </Text>
@@ -123,7 +123,7 @@ class SideMenu extends Component {
         else{
             return (
                 <Text>
-                        {/* {console.log("Is this focused true?", this.props.navigation.isFocused())} */}
+                        {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
                         {routeName}
                 </Text>
             )
@@ -131,7 +131,7 @@ class SideMenu extends Component {
     }
 
     render() {
-        console.log("Route state:", this.props.navigation.state.index)
+        console.log('Route state:', this.props.navigation.state.index)
         return (
             <View style={styles.container}>
                 <ScrollView>
@@ -139,7 +139,7 @@ class SideMenu extends Component {
                         <Left>
                             <Icon
                                 style={styles.navIconStyle}
-                                name="arrow-back"
+                                name='arrow-back'
                                 onPress={() => this.props.navigation.closeDrawer()}
                             />
                         </Left>
@@ -150,7 +150,7 @@ class SideMenu extends Component {
                             style={styles.view}
                             onPress={this.navigateToScreen('Home')}
                         >
-                            {this.checkFocus("Home", 0)}
+                            {this.checkFocus('Home', 0)}
                         </Text>
                     
                         <Accordion
@@ -169,14 +169,14 @@ class SideMenu extends Component {
                             style={styles.view}
                             onPress={this.navigateToScreen('Timeline')}
                         >
-                            {this.checkFocus("Timeline", 2)}
+                            {this.checkFocus('Timeline', 2)}
                         </Text>
                         
                         <Text
                             style={styles.view}
                             onPress={this.navigateToScreen('Social Media')}
                         >
-                            {this.checkFocus("Social Media", 3)}
+                            {this.checkFocus('Social Media', 3)}
                         </Text>
                     </Content>
                 </ScrollView>
