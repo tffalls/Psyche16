@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, StatusBar} from 'react-native';
 import {DrawerNavigator, DrawerItems} from 'react-navigation';
 import {
   Icon,
@@ -16,13 +16,16 @@ import {
   Header,
   Content,
   Left,
-  Body
+  Body,
 } from 'native-base';
 
 import Routes from './app/routing/routes'
 
 type Props = {};
 export default class App extends Component<Props> {
+  componentDidMount(){
+    StatusBar.setHidden(true)
+  }
   render() {
     return (
      <Routes/>
