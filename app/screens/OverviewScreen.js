@@ -53,22 +53,22 @@ class OverviewScreen extends Component {
         return (
            <Container>
                <Header style={headerStyle.sectionHeadingStyle}>
-                    <Left>
+                    <Left style={{flex: 1}}>
                         <Icon
                             style={headerStyle.navIconStyle}
                             name="ios-menu"
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
-                    <Body>
-                        <Title>Overview</Title>
+                    <Body style={{flex:1}}>
+                        <Title style={styles.pageHeadingText}>Overview</Title>
                     </Body>
-                    <Right/>
+                    <Right style={{flex:1}} />
                 </Header>
                 <Content>
-                    <View style={styles.pageHeadingStyle}>
+                    {/* <View style={styles.pageHeadingStyle}>
                         <Text style={styles.pageHeadingText}>Overview</Text>
-                    </View>
+                    </View> */}
                     {/* <View style={styles.roundedBoarder}> 
                         <Card style={styles.card}>
                             <Tabs tabBarUnderlineStyle={styles.tabUnderlineStyle} style={styles.overallTabStyle}>
@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
     //     borderRadius: 20,
     // },
     pageHeadingText: {
+        paddingLeft: '10%',
         fontFamily: 'Helvetica',
         fontWeight: 'bold',
         fontSize: 22,
