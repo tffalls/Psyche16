@@ -18,7 +18,9 @@ import {
     CardItem,
     DeckSwiper,
     Tab,
-    Tabs
+    Tabs,
+    Title,
+    Right
 } from 'native-base';
 
 import headerStyle from '../styles/SideMenu.style';
@@ -58,7 +60,10 @@ class OverviewScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
-                    <Body/>
+                    <Body>
+                        <Title>Overview</Title>
+                    </Body>
+                    <Right/>
                 </Header>
                 <Content>
                     <View style={styles.pageHeadingStyle}>
