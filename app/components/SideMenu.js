@@ -63,7 +63,7 @@ class SideMenu extends Component {
     renderMissionContent = () => {
         return (
             <ImageBackground
-                source = {require('../assets/PsycheGradient.png')}
+                source = {require('../assets/images/PsycheGradient.png')}
                 style = {{
                     width: '100%'
                 }}

@@ -1,4 +1,5 @@
 import { Platform } from 'react-native';
+import {Fonts} from '../components/Fonts';
 
 export default {
     container: {
@@ -6,6 +7,8 @@ export default {
         backgroundColor : '#312245ff'
     },
     navItemStyle: {
+        fontFamily: Fonts.RobotoLight,
+        fontSize: 18,
         padding: 10,
         color: 'black'
     },
@@ -17,9 +20,8 @@ export default {
         padding: 20,
         justifyContent: 'center',
         backgroundColor: '#312245ff',
-        fontFamily: 'Helvetica',
-        fontWeight: 'bold',
-        fontSize: 16,
+        fontFamily: Fonts.RobotoLight,
+        fontSize: 20,
         color: 'white'
     },
     navIconStyle: {
@@ -42,9 +44,8 @@ export default {
         color: '#f79f27ff'
     },
     accordionHeaderText: {
-        fontFamily: 'Helvetica',
-        fontWeight: 'bold',
-        fontSize: 16,
+        fontFamily: Fonts.RobotoLight,
+        fontSize: 20,
         color: 'white',
     },
     accordionHeaderStyle: {

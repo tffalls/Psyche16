@@ -24,7 +24,8 @@ import {
     Right,
 } from 'native-base';
 
-import headerStyle from '../styles/SideMenu.style';\
+import headerStyle from '../styles/SideMenu.style';
+import {Fonts} from '../components/Fonts'
 
 class OverviewScreen extends Component {
     render() {
@@ -39,7 +40,7 @@ class OverviewScreen extends Component {
                         />
                     </Left>
                     <Body style={{flex:1}}>
-                        <Title style={styles.pageHeadingText}>Overview</Title>
+                        <Text style={styles.pageHeadingText}>Overview</Text>
                     </Body>
                     <Right style={{flex:1}} />
                 </Header>
@@ -53,8 +54,8 @@ class OverviewScreen extends Component {
 const styles = StyleSheet.create({
     pageHeadingText: {
         paddingLeft: '10%',
-        fontFamily: 'Helvetica',
-        fontWeight: 'bold',
+        fontFamily: Fonts.RobotoLight,
+        //fontWeight: 'bold',
         fontSize: 22,
         paddingTop: '10%',
         color: 'white'
