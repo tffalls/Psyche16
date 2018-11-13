@@ -4,7 +4,7 @@ import {Fonts} from '../components/Fonts';
 export default {
     container: {
         flex: 1,
-        backgroundColor : '#312245ff'
+        backgroundColor : '#140025'
     },
     navItemStyle: {
         fontFamily: Fonts.RobotoLight,
@@ -19,7 +19,7 @@ export default {
         height: 60,
         padding: 20,
         justifyContent: 'center',
-        backgroundColor: '#312245ff',
+        backgroundColor: '#140025',
         fontFamily: Fonts.RobotoLight,
         fontSize: 20,
         color: 'white'
@@ -32,7 +32,7 @@ export default {
         color: '#f79f27ff'
     },
     sectionHeadingStyle: {
-        backgroundColor: '#312245ff',
+        backgroundColor: '#140025',
         borderBottomWidth: 0
     },
     collapseView: {
@@ -50,7 +50,7 @@ export default {
     },
     accordionHeaderStyle: {
         padding: 16,
-        backgroundColor: '#312245ff'
+        backgroundColor: '#140025'
     },
     // not used currently
     footerContainer: {

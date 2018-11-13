@@ -40,11 +40,31 @@ class OverviewScreen extends Component {
                         />
                     </Left>
                     <Body style={{flex:1}}>
-                        <Text style={styles.pageHeadingText}>Overview</Text>
+                        {/* <Text style={styles.pageHeadingText}>Overview</Text> */}
                     </Body>
                     <Right style={{flex:1}} />
                 </Header>
-                <Content>
+                <Content contentContainerStyle={styles.content} style={styles.pageStyle}>
+                    <Text style={styles.pageHeadingText}>Mission Overview</Text>
+                    <Text style={styles.pageBodyText}>
+                        Psyche is both the name of an asteroid orbiting the Sun between Mars and Jupiter 
+                        — and the name of a NASA space mission to visit that asteroid, led by Arizona 
+                        State University. The mission was chosen by NASA on January 4, 2017 as one of two 
+                        missions for the agency’s Discovery Program, a series of relatively low-cost missions 
+                        to solar system targets.
+                    </Text>
+                    <Text style={styles.pageHeadingText}>Trajectory</Text>
+                    <Text style={styles.pageBodyText}>
+                        The Psyche spacecraft is targeted to launch in summer 2022 and travel to the asteroid 
+                        using solar-electric (low-thrust) propulsion, arriving in 2026, following a Mars flyby 
+                        and gravity-assist in 2023. After arrival, the mission plan calls for 21 months spent 
+                        at the asteroid, mapping it and studying its properties.
+                    </Text>
+                    <Text style={styles.pageHeadingText}> Orbit</Text>
+                    <Text style={styles.pageBodyText}>
+                        Once the spacecraft arrives at the asteroid in 2026, plans call for it to spend 21 months 
+                        at the asteroid, performing science operations from four staging orbits, which become successively closer.
+                    </Text>
                 </Content>
            </Container>
         );
@@ -53,20 +73,28 @@ class OverviewScreen extends Component {
 
 const styles = StyleSheet.create({
     pageHeadingText: {
-        paddingLeft: '10%',
-        fontFamily: Fonts.RobotoLight,
-        //fontWeight: 'bold',
-        fontSize: 22,
-        paddingTop: '10%',
-        color: 'white'
+        fontFamily: Fonts.RobotoBold,
+        fontSize: 32,
+        paddingTop: '5%',
+        color: 'white',
+        width: '80%'
     },
-    pageHeadingStyle: {
-        width: '100%',
-        height: 60,
-        display: 'flex',
+    pageBodyText: {
+        fontFamily: Fonts.RobotoLight,
+        fontSize: 20,
+        padding: '10%',
+        color: 'white',
+    },
+    // titleLeftStyle: {
+    //     width: '80%',
+    // },
+    content: {
+        backgroundColor: '#140025',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#312245ff',
     },
+    pageStyle: {
+        backgroundColor: '#140025', // may replace w/ background image from GD students?
+    }
   });
 export default OverviewScreen;
