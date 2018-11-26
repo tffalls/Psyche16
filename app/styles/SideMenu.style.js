@@ -16,7 +16,7 @@ export default {
         backgroundColor: 'transparent'
     },
     view: {
-        height: 60,
+        height: 65,
         padding: 20,
         justifyContent: 'center',
         backgroundColor: '#140025',
