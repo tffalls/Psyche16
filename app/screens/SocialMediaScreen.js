@@ -11,16 +11,19 @@ import {
     Header,
     Content,
     Left,
-    Body
+    Body,
+    Tab,
+    Tabs
 } from 'native-base';
 
 import headerStyle from '../styles/SideMenu.style';
+import pageStyle from '../styles/SocialMedia.style';
 
 class SocialMediaScreen extends Component {
     render() {
         return (
            <Container>
-               <Header style={headerStyle.sectionHeadingStyle}>
+               <Header style={headerStyle.sectionHeadingStyle} hasTabs>
                     <Left>
                         <Icon
                             style={headerStyle.navIconStyle}
@@ -30,13 +33,32 @@ class SocialMediaScreen extends Component {
                     </Left>
                     <Body></Body>
                 </Header>
-                <Content contentContainerStyle={{
-                        flex: 1,
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    }}>
-                   <Text>Social Media Screen</Text>
-                </Content>
+                <Tabs tabBarUnderlineStyle={pageStyle.underlineStyle} tabContainerStyle={pageStyle.tabContainer}>
+                    <Tab
+                        heading = "Instagram"
+                        tabStyle={pageStyle.inactiveTab}
+                        activeTabStyle={pageStyle.activeTab}
+                        textStyle={pageStyle.inactiveText}
+                        activeTextStyle={pageStyle.activeText}
+                    >
+                    </Tab>
+                    <Tab
+                        heading = "Facebook"
+                        tabStyle={pageStyle.inactiveTab}
+                        activeTabStyle={pageStyle.activeTab}
+                        textStyle={pageStyle.inactiveText}
+                        activeTextStyle={pageStyle.activeText}
+                    >
+                    </Tab>
+                    <Tab
+                        heading = "Twitter"
+                        tabStyle={pageStyle.inactiveTab}
+                        activeTabStyle={pageStyle.activeTab}
+                        textStyle={pageStyle.inactiveText}
+                        activeTextStyle={pageStyle.activeText}
+                    >
+                    </Tab>
+                </Tabs>
            </Container>
 
         );
