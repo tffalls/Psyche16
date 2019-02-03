@@ -55,14 +55,14 @@ class OverviewScreen extends Component {
                         missions for the agency’s Discovery Program, a series of relatively low-cost missions 
                         to solar system targets.
                     </Text>
-                    <Text style={infoPageStyle.pageHeadingText}>Trajectory</Text>
+                    <Text style={infoPageStyle.pageHeadingTextSmall}>Trajectory</Text>
                     <Text style={infoPageStyle.pageBodyText}>
                         The Psyche spacecraft is targeted to launch in summer 2022 and travel to the asteroid 
                         using solar-electric (low-thrust) propulsion, arriving in 2026, following a Mars flyby 
                         and gravity-assist in 2023. After arrival, the mission plan calls for 21 months spent 
                         at the asteroid, mapping it and studying its properties.
                     </Text>
-                    <Text style={infoPageStyle.pageHeadingText}> Orbit</Text>
+                    <Text style={infoPageStyle.pageHeadingTextSmall}> Orbit</Text>
                     <Text style={infoPageStyle.pageBodyText}>
                         Once the spacecraft arrives at the asteroid in 2026, plans call for it to spend 21 months 
                         at the asteroid, performing science operations from four staging orbits, which become successively closer.

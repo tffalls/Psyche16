@@ -58,7 +58,7 @@ class AsteroidScreen extends Component {
                         At Psyche scientists will explore, for the first time ever, a world made 
                         not of rock or ice, but of metal.
                     </Text>
-                    <Text style={infoPageStyle.pageHeadingText}>Psyche's Story</Text>
+                    <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche's Story</Text>
                     <Text style={infoPageStyle.pageBodyText}>
                         One scenario is that long ago, a protoplanet that had separated internally 
                         into a rocky mantle and iron core suffered violent impacts that stripped away 
@@ -89,7 +89,7 @@ class AsteroidScreen extends Component {
                         </CardItem>
                     </Card>
 
-                    <Text style={infoPageStyle.pageHeadingText}>Sizing It Up</Text>
+                    <Text style={infoPageStyle.pageHeadingTextSmall}>Sizing It Up</Text>
                     <Text style={infoPageStyle.pageBodyText}>
                         If Psyche were a perfect sphere, it would have a diameter of 140 miles (
                         226 km), or about the length of the state of Massachusetts (leaving out Cape 
@@ -98,13 +98,13 @@ class AsteroidScreen extends Component {
                         larger than the area of California.
                     </Text>
 
-                    <Text style={infoPageStyle.pageHeadingText}>The Orbit</Text>
+                    <Text style={infoPageStyle.pageHeadingTextSmall}>The Orbit</Text>
                     <Text style={infoPageStyle.pageBodyText}>
                         Psyche follows an orbit in the outer part of the main asteroid belt, at an average 
                         distance from the Sun of 3 astronomical units (AU); Earth orbits at 1 AU.
                     </Text>
                    
-                    <Text style={infoPageStyle.pageHeadingText}>Our Mission</Text>
+                    <Text style={infoPageStyle.pageHeadingTextSmall}>Our Mission</Text>
                     <Text style={infoPageStyle.pageBodyText}>
                         The science goals of the Psyche Mission are to understand these building blocks of 
                         planet formation and to explore first-hand a wholly new and unexplored type of world. 
