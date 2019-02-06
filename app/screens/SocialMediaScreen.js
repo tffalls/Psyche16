@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    StyleSheet
+    StyleSheet,
+    WebView
 } from 'react-native';
 import {
     Icon,
@@ -41,7 +42,11 @@ class SocialMediaScreen extends Component {
                         textStyle={pageStyle.inactiveText}
                         activeTextStyle={pageStyle.activeText}
                     >
+                        <WebView
+                            source={{uri: 'https://www.instagram.com/nasapsyche/'}}
+                        />
                     </Tab>
+
                     <Tab
                         heading = "Facebook"
                         tabStyle={pageStyle.inactiveTab}
@@ -49,7 +54,11 @@ class SocialMediaScreen extends Component {
                         textStyle={pageStyle.inactiveText}
                         activeTextStyle={pageStyle.activeText}
                     >
+                        <WebView
+                            source={{uri: 'https://www.facebook.com/NASAPsyche/'}}
+                        />
                     </Tab>
+
                     <Tab
                         heading = "Twitter"
                         tabStyle={pageStyle.inactiveTab}
@@ -57,6 +66,9 @@ class SocialMediaScreen extends Component {
                         textStyle={pageStyle.inactiveText}
                         activeTextStyle={pageStyle.activeText}
                     >
+                        <WebView
+                            source={{uri: 'https://twitter.com/NASAPsyche'}}
+                        />
                     </Tab>
                 </Tabs>
            </Container>
