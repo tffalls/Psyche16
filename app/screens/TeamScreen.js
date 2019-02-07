@@ -5,7 +5,8 @@ import {
     StyleSheet,
     Image,
     ImageBackground,
-    WebView
+    WebView,
+    ScrollView
 } from 'react-native';
 
 import {
@@ -33,6 +34,7 @@ import { Fonts } from '../components/Fonts';
 class TeamScreen extends Component {
     render() {
         return (
+            <ScrollView>
             <Container>
                 <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{ flex: 1 }}>
@@ -85,6 +87,7 @@ class TeamScreen extends Component {
                     </ImageBackground>
                 </Content>
             </Container>
+            </ScrollView>
         );
     }
 }

@@ -23,7 +23,7 @@ export default {
     pageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
         fontSize: 22,
-        paddingTop: '5%',
+        marginTop: '5%',
         paddingBottom: '1%', // prevent cuttoff letters
         paddingLeft: '10%',
         paddingRight: '10%', 
@@ -119,8 +119,8 @@ export default {
     teamCaptionText: {
         fontFamily: Fonts.RobotoLight,
         fontSize: 20,
-        paddingTop: '4%',
-        paddingBottom: '5%', // prevent cuttoff letters
+        marginTop: '4%',
+        marginBottom: '5%', // prevent cuttoff letters
         paddingLeft: '10%',
         paddingRight: '10%', 
         color: '#ed5b68ff',

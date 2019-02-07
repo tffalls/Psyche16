@@ -19,7 +19,7 @@ export default {
     pageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
         fontSize: 22,
-        paddingTop: '5%',
+        marginTop: '5%',
         paddingBottom: '1%', // prevent cuttoff letters
         color: 'white',
         width: '80%',
@@ -36,7 +36,7 @@ export default {
         fontSize: 20,
         paddingLeft: '10%',
         paddingRight: '10%',
-        paddingTop: '5%',
+        paddingTop: '2%',
         paddingBottom: '5%',
         color: 'white',
     },
