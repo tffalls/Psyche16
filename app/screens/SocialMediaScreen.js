@@ -3,7 +3,8 @@ import {
     View,
     Text,
     StyleSheet,
-    WebView
+    WebView,
+    Image
 } from 'react-native';
 import {
     Icon,
@@ -14,7 +15,9 @@ import {
     Left,
     Body,
     Tab,
-    Tabs
+    Tabs,
+    TabHeading,
+    //Image
 } from 'native-base';
 
 import headerStyle from '../styles/SideMenu.style';
@@ -35,12 +38,16 @@ class SocialMediaScreen extends Component {
                     <Body></Body>
                 </Header>
                 <Tabs tabBarUnderlineStyle={pageStyle.underlineStyle} tabContainerStyle={pageStyle.tabContainer}>
-                    <Tab
-                        heading = "Instagram"
+                    <Tab 
+                        heading={ 
+                            <TabHeading style={pageStyle.activeTab}>
+                                <Image 
+                                    source={require('../assets/images/icons/InstagramGradient_YellowtoOrange-03.png')}
+                                    style={{width: 32, height: 32}}
+                                />
+                            </TabHeading>}
                         tabStyle={pageStyle.inactiveTab}
                         activeTabStyle={pageStyle.activeTab}
-                        textStyle={pageStyle.inactiveText}
-                        activeTextStyle={pageStyle.activeText}
                     >
                         <WebView
                             source={{uri: 'https://www.instagram.com/nasapsyche/'}}
@@ -48,11 +55,15 @@ class SocialMediaScreen extends Component {
                     </Tab>
 
                     <Tab
-                        heading = "Facebook"
+                        heading={ 
+                            <TabHeading style={pageStyle.activeTab}>
+                                <Image 
+                                    source={require('../assets/images/icons/FacebookGradient_YellowtoOrange.png')}
+                                    style={{width: 32, height: 32}}
+                                />
+                            </TabHeading>}
                         tabStyle={pageStyle.inactiveTab}
                         activeTabStyle={pageStyle.activeTab}
-                        textStyle={pageStyle.inactiveText}
-                        activeTextStyle={pageStyle.activeText}
                     >
                         <WebView
                             source={{uri: 'https://www.facebook.com/NASAPsyche/'}}
@@ -60,11 +71,15 @@ class SocialMediaScreen extends Component {
                     </Tab>
 
                     <Tab
-                        heading = "Twitter"
+                        heading={ 
+                            <TabHeading style={pageStyle.activeTab}>
+                                <Image 
+                                    source={require('../assets/images/icons/TwitterGradient_YellowtoOrange-08.png')}
+                                    style={{width: 32, height: 32}}
+                                />
+                            </TabHeading>}
                         tabStyle={pageStyle.inactiveTab}
                         activeTabStyle={pageStyle.activeTab}
-                        textStyle={pageStyle.inactiveText}
-                        activeTextStyle={pageStyle.activeText}
                     >
                         <WebView
                             source={{uri: 'https://twitter.com/NASAPsyche'}}
