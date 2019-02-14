@@ -39,7 +39,7 @@ export default DrawerNavigator({
         screen: TeamScreen
     }
 }, {
-    initialRouteName: 'Social Media', // Set diff for testing right now
+    initialRouteName: 'Timeline', // Set diff for testing right now
     contentComponent: SideMenu,
     drawerOpenRoute: 'openDrawer',
     drawerCloseRoute: 'closeDrawer',

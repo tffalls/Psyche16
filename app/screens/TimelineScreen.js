@@ -24,7 +24,7 @@ class TimelineScreen extends Component {
                     <Left>
                         <Icon
                             style={headerStyle.navIconStyle}
-                            name='ios-menu'
+                            name="ios-menu"
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
@@ -34,7 +34,7 @@ class TimelineScreen extends Component {
                         flex: 1,
                         alignItems: 'center',
                         justifyContent: 'center'
-                    }}>
+                }}>
                     <Text>Timeline Screen</Text>
                 </Content>
            </Container>

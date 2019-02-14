@@ -55,8 +55,10 @@ class TeamScreen extends Component {
                         source={require('../assets/images/Background.jpg')}
                         style={{
                             width: '100%',
-                            height: '100%'
+                            height: '100%',
+                            //flex: 1
                         }}
+                        //resizeMode='cover'
                     >
                         <Text style={teamPageStyle.pageHeadingText}>The Team</Text>
                         <Text />
