@@ -5,8 +5,6 @@ import {
     StyleSheet,
     Image,
     ImageBackground,
-    WebView,
-    ScrollView
 } from 'react-native';
 
 import {
@@ -34,7 +32,6 @@ import { Fonts } from '../components/Fonts';
 class TeamScreen extends Component {
     render() {
         return (
-            <ScrollView>
             <Container>
                 <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{ flex: 1 }}>
@@ -51,14 +48,13 @@ class TeamScreen extends Component {
                 </Header>
 
                 <Content contentContainerStyle={teamPageStyle.content} style={teamPageStyle.pageStyle}>
-                    <ImageBackground
+                    <ImageBackground 
                         source={require('../assets/images/Background.jpg')}
                         style={{
                             width: '100%',
-                            height: '100%',
-                            //flex: 1
+                            height: null,
+                            flex: 1
                         }}
-                        //resizeMode='cover'
                     >
                         <Text style={teamPageStyle.pageHeadingText}>The Team</Text>
                         <Text />
@@ -86,10 +82,14 @@ class TeamScreen extends Component {
                         />
                         <Text style={teamPageStyle.pageBodyTextAlt}>To see more of the team, visit the </Text>
                         <Text style={teamPageStyle.webLinkStyle}>Psyche Website.</Text>
-                    </ImageBackground>
+                        <Text/>
+                        <Text/>
+
+                       </ImageBackground>
+                        
+                    
                 </Content>
             </Container>
-            </ScrollView>
         );
     }
 }

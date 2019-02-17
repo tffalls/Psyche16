@@ -26,7 +26,7 @@ export default {
         marginTop: '5%',
         paddingBottom: '1%', // prevent cuttoff letters
         paddingLeft: '10%',
-        paddingRight: '10%', 
+       paddingRight: '10%', 
         color: 'white',
         width: '80%',
     },
@@ -64,15 +64,11 @@ export default {
         paddingBottom: '5%',
         color: '#ed5b68ff',
     },
-    pagePop: {
-        width: '100%',
-        backgroundColor: '#a3415dff'
-    },
     content: {
         backgroundColor: '#140025',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100%'
+        //height: '120%'
     },
     pageStyle: {
         backgroundColor: '#140025', // may replace w/ background image from GD students?
@@ -113,8 +109,7 @@ export default {
         marginRight: '10%',
         marginTop: '5%',
         width: '80%',
-        height: '20%'
-        
+        height: 200    
     },
     teamCaptionText: {
         fontFamily: Fonts.RobotoLight,
@@ -126,6 +121,4 @@ export default {
         color: '#ed5b68ff',
         width: '80%',
     }
-
-
 };
