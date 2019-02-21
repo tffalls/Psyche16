@@ -6,6 +6,8 @@ export default {
         fontSize: 32,
         paddingTop: '5%',
         paddingBottom: '1%', // prevent cuttoff letters
+        paddingLeft: '10%',
+        paddingRight: '10%',
         color: 'white',
         width: '80%',
     },
@@ -13,6 +15,8 @@ export default {
         fontFamily: Fonts.RobotoBold,
         fontSize: 32,
         paddingBottom: '1%', // prevent cuttoff letters
+        paddingLeft: '10%',
+        paddingRight: '10%',
         color: 'white',
         width: '80%',
     },
@@ -21,6 +25,8 @@ export default {
         fontSize: 22,
         marginTop: '5%',
         paddingBottom: '1%', // prevent cuttoff letters
+        paddingLeft: '10%',
+        paddingRight: '10%',
         color: 'white',
         width: '80%',
     },
@@ -28,6 +34,8 @@ export default {
         fontFamily: Fonts.RobotoBold,
         fontSize: 22,
         paddingBottom: '1%', // prevent cuttoff letters
+        paddingLeft: '10%',
+        paddingRight: '10%',
         color: 'white',
         width: '80%',
     },
@@ -54,7 +62,9 @@ export default {
     },
     cardStyle: {
         backgroundColor: '#f79f27ff',
-        padding: '5%',
+        paddingTop: '5%',
+        paddingBottom: '5%',
+        marginLeft: '5%',
         borderRadius: 10,
         borderColor: '#f79f27ff',
         width: '90%',
