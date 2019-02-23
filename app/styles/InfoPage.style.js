@@ -92,6 +92,12 @@ export default {
     cardCaptionSection: {
         backgroundColor: '#140025',
         borderRadius: 10,
+    },
+    imageStyle: {
+        marginTop: '2%',
+        marginBottom: '2%',
+        width: '100%',
+        height: '20%'
     }
 
 

@@ -71,6 +71,10 @@ class OverviewScreen extends Component {
                             at the asteroid, mapping it and studying its properties.
                         </Text>
                         <Text style={infoPageStyle.pageHeadingTextSmall}> Orbit</Text>
+                        <Image
+                            source={require('../assets/images/animations/OrbitsAnimation.gif')}
+                            style={infoPageStyle.imageStyle}
+                        />
                         <Text style={infoPageStyle.pageBodyText}>
                             Once the spacecraft arrives at the asteroid in 2026, plans call for it to spend 21 months 
                             at the asteroid, performing science operations from four staging orbits, which become successively closer.

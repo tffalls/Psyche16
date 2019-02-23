@@ -85,9 +85,7 @@ class TeamScreen extends Component {
                         <Text/>
                         <Text/>
 
-                       </ImageBackground>
-                        
-                    
+                    </ImageBackground>
                 </Content>
             </Container>
         );

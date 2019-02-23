@@ -61,7 +61,8 @@ class ScienceScreen extends Component {
                             spectrometer, and a magnetometer, and will conduct radio science.
                         </Text>
 
-                        <Text style={infoPageStyle.pageHeadingTextSmall}>The Psyche Multispectral Imager</Text>
+                        <Text style={infoPageStyle.pageHeadingTextSmall}>The Psyche</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Multispectral Imager</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The Multispectral Imager provides high-resolution images using filters to discriminate 
                             between Psyche’s metallic and silicate constituents. The instrument consists of a pair 
@@ -70,8 +71,8 @@ class ScienceScreen extends Component {
                             The team is based at Arizona State University.
                         </Text>
 
-                        <Text style={infoPageStyle.pageHeadingTextSmall}>The Gamma Ray and Neutron</Text>
-                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Spectrometer</Text>
+                        <Text style={infoPageStyle.pageHeadingTextSmall}>The Gamma Ray and</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Neutron Spectrometer</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The Gamma Ray and Neutron Spectrometer will detect, measure, and map Psyche’s elemental composition. 
                             The instrument is mounted on a 6-foot (2-meter) boom to distance the sensors from background radiation 
