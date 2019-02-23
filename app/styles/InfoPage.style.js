@@ -93,7 +93,7 @@ export default {
         backgroundColor: '#140025',
         borderRadius: 10,
     },
-    imageStyle: {
+    animationStyle: {
         marginTop: '2%',
         marginBottom: '2%',
         width: '100%',

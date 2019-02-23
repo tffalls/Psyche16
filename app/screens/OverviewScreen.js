@@ -73,7 +73,7 @@ class OverviewScreen extends Component {
                         <Text style={infoPageStyle.pageHeadingTextSmall}> Orbit</Text>
                         <Image
                             source={require('../assets/images/animations/OrbitsAnimation.gif')}
-                            style={infoPageStyle.imageStyle}
+                            style={infoPageStyle.animationStyle}
                         />
                         <Text style={infoPageStyle.pageBodyText}>
                             Once the spacecraft arrives at the asteroid in 2026, plans call for it to spend 21 months 
