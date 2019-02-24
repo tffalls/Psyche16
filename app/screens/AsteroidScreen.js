@@ -66,6 +66,11 @@ class AsteroidScreen extends Component {
                             At Psyche scientists will explore, for the first time ever, a world made 
                             not of rock or ice, but of metal.
                         </Text>
+                        <Image
+                            source={require('../assets/images/sketches/RN_PsycheAssets_Asteroid-01.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche's Story</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             One scenario is that long ago, a protoplanet that had separated internally 
@@ -73,6 +78,7 @@ class AsteroidScreen extends Component {
                             its mantle, leaving only the metal core. Or is Psyche a survivor of some more 
                             unusual process not yet imagined?
                         </Text>
+
                         <Card style={infoPageStyle.cardStyle}>
                             <CardItem style={infoPageStyle.cardHeader}>
                                 <Body>

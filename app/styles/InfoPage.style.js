@@ -98,7 +98,13 @@ export default {
         marginBottom: '2%',
         width: '100%',
         height: '20%'
-    }
-
-
+    },
+    sketchStyle: {
+        marginLeft: '10%',
+        marginRight: '10%',
+        marginTop: '5%',
+        marginBottom: '5%',
+        width: '80%',
+        height: '15%'    
+    },
 };
