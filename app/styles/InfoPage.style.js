@@ -97,14 +97,20 @@ export default {
         marginTop: '2%',
         marginBottom: '2%',
         width: '100%',
-        height: '20%'
+        height: 215
     },
     sketchStyle: {
         marginLeft: '10%',
         marginRight: '10%',
-        marginTop: '5%',
-        marginBottom: '5%',
-        width: '80%',
-        height: '15%'    
+        marginTop: '2%',
+        marginBottom: '2%',
+        width: '76%',
+        height: '12%'    
     },
+    pageBottomLarge: {
+        height: 400
+    },
+    pageBottomSmall: {
+        height: 100
+    }
 };

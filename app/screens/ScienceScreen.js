@@ -73,6 +73,10 @@ class ScienceScreen extends Component {
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Gamma Ray and</Text>
                         <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Neutron Spectrometer</Text>
+                        <Image
+                            source={require('../assets/images/sketches/RN_Asset_Spectometer-03.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageBodyText}>
                             The Gamma Ray and Neutron Spectrometer will detect, measure, and map Psyche’s elemental composition. 
                             The instrument is mounted on a 6-foot (2-meter) boom to distance the sensors from background radiation 
@@ -103,6 +107,7 @@ class ScienceScreen extends Component {
                             allows the spacecraft to communicate more data in a given amount of time. The DSOC team is based at the Jet 
                             Propulsion Laboratory.
                         </Text>
+                        <Text style={infoPageStyle.pageBottomLarge}/>
                     </ImageBackground>
                </Content>
            </Container>
