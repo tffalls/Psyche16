@@ -136,9 +136,6 @@ class AsteroidScreen extends Component {
                             how old it is, whether it formed in similar ways to the Earth’s core, and what its 
                             surface is like.
                         </Text>
-
-                        <Text style={infoPageStyle.pageBottomLarge}/>
-                        
                   </ImageBackground>
                 </Content>
            </Container>

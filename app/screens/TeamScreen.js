@@ -84,7 +84,6 @@ class TeamScreen extends Component {
                         <Text style={teamPageStyle.webLinkStyle}>Psyche Website.</Text>
                         <Text/>
                         <Text/>
-
                     </ImageBackground>
                 </Content>
             </Container>

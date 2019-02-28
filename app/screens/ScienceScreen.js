@@ -107,7 +107,6 @@ class ScienceScreen extends Component {
                             allows the spacecraft to communicate more data in a given amount of time. The DSOC team is based at the Jet 
                             Propulsion Laboratory.
                         </Text>
-                        <Text style={infoPageStyle.pageBottomLarge}/>
                     </ImageBackground>
                </Content>
            </Container>

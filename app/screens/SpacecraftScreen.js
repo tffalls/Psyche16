@@ -66,6 +66,10 @@ class SpacecraftScreen extends Component {
                             Space Optical Communication, that encodes data in photons to communicate between a probe in deep 
                             space and Earth.
                         </Text>
+                        <Image
+                            source={require('../assets/images/sketches/Psyche_SatelliteStats_Icons&Text.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Spacecraft Size</Text>
                         <Text style={infoPageStyle.pageBodyText}>

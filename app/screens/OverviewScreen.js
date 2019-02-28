@@ -94,7 +94,6 @@ class OverviewScreen extends Component {
                                 />
                             </CardItem>
                         </Card>
-                        <Text style={infoPageStyle.pageBottomSmall}/>
                     </ImageBackground>
                 </Content>
            </Container>

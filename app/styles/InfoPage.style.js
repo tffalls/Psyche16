@@ -105,13 +105,7 @@ export default {
         marginTop: '2%',
         marginBottom: '2%',
         width: '80%',
-        height: '12%',
+        height: 300,
         resizeMode:'contain'   
     },
-    pageBottomLarge: {
-        height: 400
-    },
-    pageBottomSmall: {
-        height: 100
-    }
 };
