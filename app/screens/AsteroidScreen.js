@@ -67,17 +67,23 @@ class AsteroidScreen extends Component {
                             not of rock or ice, but of metal.
                         </Text>
                         <Image
+                            source={require('../assets/images/sketches/PsycheAsteroidStats_iconsandtextgroup.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
+                        
+
+                        <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche's Story</Text>
+                        <Image
                             source={require('../assets/images/sketches/RN_PsycheAssets_Asteroid-01.png')}
                             style={infoPageStyle.sketchStyle}
                         />
-
-                        <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche's Story</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             One scenario is that long ago, a protoplanet that had separated internally 
                             into a rocky mantle and iron core suffered violent impacts that stripped away 
                             its mantle, leaving only the metal core. Or is Psyche a survivor of some more 
                             unusual process not yet imagined?
                         </Text>
+                       
 
                         <Card style={infoPageStyle.cardStyle}>
                             <CardItem style={infoPageStyle.cardHeader}>
@@ -111,6 +117,10 @@ class AsteroidScreen extends Component {
                             kilometers, making it just smaller than the area of the state of Texas and quite a bit 
                             larger than the area of California.
                         </Text>
+                        <Image
+                            source={require('../assets/images/sketches/Psyche_AsteroidStats_MassachusettsComparison.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Orbit</Text>
                         <Text style={infoPageStyle.pageBodyText}>

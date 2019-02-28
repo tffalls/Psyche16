@@ -104,8 +104,9 @@ export default {
         marginRight: '10%',
         marginTop: '2%',
         marginBottom: '2%',
-        width: '76%',
-        height: '12%'    
+        width: '80%',
+        height: '12%',
+        resizeMode:'contain'   
     },
     pageBottomLarge: {
         height: 400
