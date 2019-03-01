@@ -60,6 +60,10 @@ class ScienceScreen extends Component {
                             The Psyche spacecraft will carry a multispectral imager, a gamma ray and neutron 
                             spectrometer, and a magnetometer, and will conduct radio science.
                         </Text>
+                        <Image
+                            source={require('../assets/images/animations/SciencePhasesAnimation.gif')}
+                            style={infoPageStyle.animationStyle}
+                        />
                         
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Psyche</Text>
                         <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Multispectral Imager</Text>
