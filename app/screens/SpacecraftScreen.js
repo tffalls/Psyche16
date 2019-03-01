@@ -72,6 +72,10 @@ class SpacecraftScreen extends Component {
                         />
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Spacecraft Size</Text>
+                        <Image
+                            source={require('../assets/images/sketches/PsycheAsset_VisualizingSatteliteSize-01.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court.
                         </Text>
@@ -83,6 +87,10 @@ class SpacecraftScreen extends Component {
                         </Text>
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Spacecraft</Text>
+                        <Image
+                            source={require('../assets/images/sketches/RN_Asset_Sattelite-01.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft, comprised of the bus (body), two
                             solar arrays in a cross formation, and the instrument payload,
@@ -90,9 +98,10 @@ class SpacecraftScreen extends Component {
                             orbit the asteroid.
                         </Text>
                         <Image
-                            source={require('../assets/images/sketches/RN_Asset_Sattelite-01.png')}
+                            source={require('../assets/images/sketches/AssetsPsyche_Propulsion.png')}
                             style={infoPageStyle.sketchStyle}
                         />
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Propulsion System</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The spacecraft will be propelled by solar electric propulsion.
