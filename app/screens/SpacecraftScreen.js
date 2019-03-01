@@ -89,7 +89,10 @@ class SpacecraftScreen extends Component {
                             will use solar electric (low-thrust) propulsion to travel to and
                             orbit the asteroid.
                         </Text>
-
+                        <Image
+                            source={require('../assets/images/sketches/RN_Asset_Sattelite-01.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Propulsion System</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The spacecraft will be propelled by solar electric propulsion.

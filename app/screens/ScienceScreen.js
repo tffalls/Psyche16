@@ -60,7 +60,10 @@ class ScienceScreen extends Component {
                             The Psyche spacecraft will carry a multispectral imager, a gamma ray and neutron 
                             spectrometer, and a magnetometer, and will conduct radio science.
                         </Text>
-
+                        <Image
+                            source={require('../assets/images/sketches/RN_Asset_MultiSpectralImager-02.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Psyche</Text>
                         <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Multispectral Imager</Text>
                         <Text style={infoPageStyle.pageBodyText}>
@@ -83,7 +86,10 @@ class ScienceScreen extends Component {
                             created by energetic particles interacting with the spacecraft and to provide an unobstructed field of 
                             view. The team is based at the Applied Physics Laboratory at Johns Hopkins University.
                         </Text>
-
+                        <Image
+                            source={require('../assets/images/sketches/RN_Asset_Magnetometer-04.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche Magnetometer</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche Magnetometer is designed to detect and measure the remanent magnetic field of the asteroid. It is 
