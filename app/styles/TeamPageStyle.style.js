@@ -10,7 +10,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     overflowPageHeadingText: {
         fontFamily: Fonts.RobotoBold,
@@ -20,7 +20,7 @@ export default {
         paddingRight: '10%', // prevent cuttoff letters
         color: 'white',
         width: '80%',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     pageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
@@ -41,7 +41,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     pageBodyText: {
         fontFamily: Fonts.RobotoLight,
@@ -51,16 +51,16 @@ export default {
         paddingTop: '5%',
         paddingBottom: '5%',
         color: 'white',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     pageBodyTextAlt: {
         fontFamily: Fonts.RobotoLight,
-        fontSize: 20,
+        fontSize: 18,
         paddingLeft: '10%',
         paddingRight: '10%',
         paddingTop: '5%',
         color: 'white',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     webLinkStyle: {
         fontFamily: Fonts.RobotoLight,
@@ -69,7 +69,7 @@ export default {
         paddingRight: '10%',
         paddingBottom: '5%',
         color: '#ed5b68ff',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     content: {
         backgroundColor: '#140025',
@@ -88,13 +88,13 @@ export default {
     },
     teamCaptionText: {
         fontFamily: Fonts.RobotoLight,
-        fontSize: 20,
+        fontSize: 18,
         marginTop: '4%',
         marginBottom: '5%', // prevent cuttoff letters
         paddingLeft: '10%',
         paddingRight: '10%', 
         color: '#ed5b68ff',
         width: '80%',
-        letterSpacing: 1,
+        letterSpacing: 2,
     }
 };

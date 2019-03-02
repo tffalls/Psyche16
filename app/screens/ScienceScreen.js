@@ -81,7 +81,8 @@ class ScienceScreen extends Component {
 
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Gamma Ray and</Text>
-                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Neutron Spectrometer</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Neutron</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Spectrometer</Text>
                         <Image
                             source={require('../assets/images/sketches/RN_Asset_Spectometer-03.png')}
                             style={infoPageStyle.sketchStyle}
@@ -93,7 +94,8 @@ class ScienceScreen extends Component {
                             view. The team is based at the Applied Physics Laboratory at Johns Hopkins University.
                         </Text>
                         
-                        <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche Magnetometer</Text>
+                        <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Magnetometer</Text>
                         <Image
                             source={require('../assets/images/sketches/RN_Asset_Magnetometer-04.png')}
                             style={infoPageStyle.sketchStyle}
@@ -124,7 +126,8 @@ class ScienceScreen extends Component {
                         
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Deep Space Optical</Text>
-                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Communication (DSOC)</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Communication</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingTextSmall}>(DSOC)</Text>
                         <Image
                             source={require('../assets/images/sketches/RN_ASSETS_DSOC.png')}
                             style={infoPageStyle.sketchStyle}

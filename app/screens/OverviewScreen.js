@@ -55,7 +55,8 @@ class OverviewScreen extends Component {
                             flex: 1
                         }}
                     >
-                        <Text style={infoPageStyle.pageHeadingText}>Mission Overview</Text>
+                        <Text style={infoPageStyle.pageHeadingText}>Mission</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingText}>Overview</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             Psyche is both the name of an asteroid orbiting the Sun between Mars and Jupiter 
                             — and the name of a NASA space mission to visit that asteroid, led by Arizona 
@@ -63,6 +64,7 @@ class OverviewScreen extends Component {
                             missions for the agency’s Discovery Program, a series of relatively low-cost missions 
                             to solar system targets.
                         </Text>
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Trajectory</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft is targeted to launch in summer 2022 and travel to the asteroid 
