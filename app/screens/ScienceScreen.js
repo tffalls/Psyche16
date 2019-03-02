@@ -46,7 +46,7 @@ class ScienceScreen extends Component {
                 </Header>   
                 <Content contentContainerStyle={infoPageStyle.content} style={infoPageStyle.pageStyle}>
                 <ImageBackground 
-                        source={require('../assets/images/Background.jpg')}
+                        source={require('../assets/images/backgrounds/Background.jpg')}
                         style={{
                             width: '100%',
                             height: null,

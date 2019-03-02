@@ -10,6 +10,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     overflowPageHeadingText: {
         fontFamily: Fonts.RobotoBold,
@@ -19,6 +20,7 @@ export default {
         paddingRight: '10%', // prevent cuttoff letters
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     pageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
@@ -26,9 +28,10 @@ export default {
         marginTop: '5%',
         paddingBottom: '1%', // prevent cuttoff letters
         paddingLeft: '10%',
-       paddingRight: '10%', 
+        paddingRight: '10%', 
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     overflowPageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
@@ -38,6 +41,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     pageBodyText: {
         fontFamily: Fonts.RobotoLight,
@@ -47,6 +51,7 @@ export default {
         paddingTop: '5%',
         paddingBottom: '5%',
         color: 'white',
+        letterSpacing: 1,
     },
     pageBodyTextAlt: {
         fontFamily: Fonts.RobotoLight,
@@ -55,6 +60,7 @@ export default {
         paddingRight: '10%',
         paddingTop: '5%',
         color: 'white',
+        letterSpacing: 1,
     },
     webLinkStyle: {
         fontFamily: Fonts.RobotoLight,
@@ -63,46 +69,15 @@ export default {
         paddingRight: '10%',
         paddingBottom: '5%',
         color: '#ed5b68ff',
+        letterSpacing: 1,
     },
     content: {
         backgroundColor: '#140025',
         justifyContent: 'center',
         alignItems: 'center',
-        //height: '120%'
     },
     pageStyle: {
         backgroundColor: '#140025', // may replace w/ background image from GD students?
-    },
-    cardStyle: {
-        backgroundColor: '#f79f27ff',
-        padding: '5%',
-        borderRadius: 10,
-        borderColor: '#f79f27ff',
-        width: '90%',
-    },
-    cardHeader: {
-        backgroundColor: '#f79f27ff',
-    },
-    cardBody: {
-        backgroundColor: '#f79f27ff',
-        height: 240,
-        width: '100%',
-        flex: 1,
-    },
-    cardText: {
-        fontFamily: Fonts.RobotoBold,
-        fontSize: 18,
-        color: '#140025',
-    },
-    cardCaptionText: {
-        fontFamily: Fonts.RobotoLight,
-        fontSize: 18,
-        color: '#140025',
-        
-    }, 
-    cardCaptionSection: {
-        backgroundColor: '#140025',
-        borderRadius: 10,
     },
     teamPhoto: {
         marginLeft: '10%',
@@ -120,5 +95,6 @@ export default {
         paddingRight: '10%', 
         color: '#ed5b68ff',
         width: '80%',
+        letterSpacing: 1,
     }
 };

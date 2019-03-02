@@ -10,7 +10,8 @@ export default {
         fontFamily: Fonts.RobotoLight,
         fontSize: 18,
         padding: 10,
-        color: 'black'
+        color: 'white',
+        letterSpacing: 2
     },
     navSectionStyle: {
         backgroundColor: 'transparent'
@@ -22,7 +23,9 @@ export default {
         backgroundColor: '#140025',
         fontFamily: Fonts.RobotoLight,
         fontSize: 20,
-        color: 'white'
+        color: 'white',
+        letterSpacing: 2,
+        
     },
     navIconStyle: {
         paddingTop: 12,
@@ -47,6 +50,7 @@ export default {
         fontFamily: Fonts.RobotoLight,
         fontSize: 20,
         color: 'white',
+        letterSpacing: 2,        
     },
     accordionHeaderStyle: {
         padding: 16,

@@ -49,7 +49,7 @@ class TeamScreen extends Component {
 
                 <Content contentContainerStyle={teamPageStyle.content} style={teamPageStyle.pageStyle}>
                     <ImageBackground 
-                        source={require('../assets/images/Background.jpg')}
+                        source={require('../assets/images/backgrounds/Background.jpg')}
                         style={{
                             width: '100%',
                             height: null,

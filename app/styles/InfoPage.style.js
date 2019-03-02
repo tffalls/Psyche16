@@ -10,6 +10,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
+        letterSpacing: 2,
     },
     overflowPageHeadingText: {
         fontFamily: Fonts.RobotoBold,
@@ -19,6 +20,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     pageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
@@ -29,6 +31,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     overflowPageHeadingTextSmall: {
         fontFamily: Fonts.RobotoBold,
@@ -38,6 +41,7 @@ export default {
         paddingRight: '10%',
         color: 'white',
         width: '80%',
+        letterSpacing: 1,
     },
     pageBodyText: {
         fontFamily: Fonts.RobotoLight,
@@ -47,6 +51,8 @@ export default {
         paddingTop: '2%',
         paddingBottom: '5%',
         color: 'white',
+        letterSpacing: 1,
+        lineHeight: 30
     },
     pagePop: {
         width: '100%',
