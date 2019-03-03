@@ -80,7 +80,12 @@ export default {
     },
     cardBody: {
         backgroundColor: '#f79f27ff',
-        height: 240,
+        width: '100%',
+        flex: 1,
+    },
+    cardBodyVideo: {
+        backgroundColor: '#f79f27ff',
+        height: 250,
         width: '100%',
         flex: 1,
     },
@@ -88,11 +93,14 @@ export default {
         fontFamily: Fonts.RobotoBold,
         fontSize: 18,
         color: '#140025',
+        letterSpacing: 2,
     },
     cardCaptionText: {
         fontFamily: Fonts.RobotoLight,
         fontSize: 18,
         color: '#140025',
+        letterSpacing: 2,
+        lineHeight: 30
         
     }, 
     cardCaptionSection: {

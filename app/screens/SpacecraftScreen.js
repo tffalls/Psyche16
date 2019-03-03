@@ -73,7 +73,7 @@ class SpacecraftScreen extends Component {
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Spacecraft Size</Text>
                         <Image
-                            source={require('../assets/images/sketches/PsycheAsset_VisualizingSatteliteSize-01.png')}
+                            source={require('../assets/images/sketches/PsycheAsset_VisualizingSatteliteSize_NEW.png')}
                             style={infoPageStyle.sketchStyle}
                         />
                         <Text style={infoPageStyle.pageBodyText}>
@@ -81,6 +81,10 @@ class SpacecraftScreen extends Component {
                         </Text>
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Bus (Body) Size</Text>
+                        <Image
+                            source={require('../assets/images/sketches/PsycheBus_Sizecomparison.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageBodyText}>
                             The bus or “body” of the spacecraft is slightly bigger than a Smart Car and about as tall as a 
                             regulation basketball hoop.

@@ -39,7 +39,7 @@ export default DrawerNavigator({
         screen: TeamScreen
     }
 }, {
-    initialRouteName: 'Instruments and Science', // Set diff for testing right now
+    initialRouteName: 'The Asteroid', // Set diff for testing right now
     contentComponent: SideMenu,
     drawerOpenRoute: 'openDrawer',
     drawerCloseRoute: 'closeDrawer',

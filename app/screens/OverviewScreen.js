@@ -66,6 +66,10 @@ class OverviewScreen extends Component {
                         </Text>
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Trajectory</Text>
+                        <Image
+                            source={require('../assets/images/sketches/RN_NEW_Trajectory-03.png')}
+                            style={infoPageStyle.sketchStyle}
+                        />
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft is targeted to launch in summer 2022 and travel to the asteroid 
                             using solar-electric (low-thrust) propulsion, arriving in 2026, following a Mars flyby 
@@ -87,7 +91,7 @@ class OverviewScreen extends Component {
                                     <Text style={infoPageStyle.cardText}>Journey to a Metal World</Text>
                                 </Body>
                             </CardItem>
-                            <CardItem cardbody style={infoPageStyle.cardBody}>
+                            <CardItem cardbody style={infoPageStyle.cardBodyVideo}>
                                 <WebView
                                     javaScriptEnabled={true}
                                     domStorageEnabled={true}

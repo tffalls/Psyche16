@@ -74,7 +74,7 @@ class AsteroidScreen extends Component {
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche's Story</Text>
                         <Image
-                            source={require('../assets/images/sketches/RN_PsycheAssets_Asteroid-01.png')}
+                            source={require('../assets/images/sketches/AssetsPSYCHE_AsteroidNEW.png')}
                             style={infoPageStyle.sketchStyle}
                         />
                         <Text style={infoPageStyle.pageBodyText}>
@@ -91,7 +91,7 @@ class AsteroidScreen extends Component {
                                     <Text style={infoPageStyle.cardText}>How It Was Formed</Text>
                                 </Body>
                             </CardItem>
-                            <CardItem style={infoPageStyle.cardHeader}>
+                            <CardItem style={infoPageStyle.cardBody}>
                                 <Text style={infoPageStyle.cardCaptionText}>
                                     The asteroid is most likely a survivor of multiple violent 
                                     hit-and-run collisions, common when the solar system was forming.
@@ -99,11 +99,11 @@ class AsteroidScreen extends Component {
                                     of the other terrestrial planets came to be.
                                 </Text>
                             </CardItem>
-                            <CardItem cardbody style={infoPageStyle.cardBody}>
+                            <CardItem cardbody style={infoPageStyle.cardBodyVideo}>
                                 <WebView
                                     javaScriptEnabled={true}
                                     domStorageEnabled={true}
-                                    style={{width: '100%', borderRadius: 10}}
+                                    style={{width: '100%'}}
                                     source={{ uri: "https://vimeo.com/246338699" }}
                                 />
                             </CardItem>
