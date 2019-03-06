@@ -5,6 +5,7 @@ import {
     StyleSheet,
     Image,
     ImageBackground,
+    Linking,
 } from 'react-native';
 
 import {
@@ -81,7 +82,12 @@ class TeamScreen extends Component {
                             style={teamPageStyle.teamPhoto}
                         />
                         <Text style={teamPageStyle.pageBodyTextAlt}>To see more of the team, visit the </Text>
-                        <Text style={teamPageStyle.webLinkStyle}>Psyche Website.</Text>
+                        <Text 
+                            style={teamPageStyle.webLinkStyle} 
+                            onPress={() => Linking.openURL('https://psyche.asu.edu/')}
+                        >
+                            Psyche Website.
+                        </Text>
                         <Text/>
                         <Text/>
                     </ImageBackground>

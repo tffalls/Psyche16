@@ -49,7 +49,7 @@ class TimelineScreen extends Component {
                 title: 'Preliminary Design of All Instruments & Spacecraft',
                 description: 'Jan 2017 – May 2019  \n\nScience and engineering teams on the mission are designing the spacecraft and the instruments that will be used to analyze the asteroid.  In March 2019, the team will undergo project and flight system Preliminary Design Review.  In May 2019, the team reaches Key Decision Point C, which will give the team the official approval to move to the next phase (Phase C).',
                 lineColor: '#f27d3eff',
-                circleColor: '#f27d3eff'
+                circleColor: '#f27d3eff',
             },
             {
                 key: '3',

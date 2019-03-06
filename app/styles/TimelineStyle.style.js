@@ -8,7 +8,7 @@ export default {
         paddingBottom: '1%', // prevent cuttoff letters
         color: 'white',
         width: '80%',
-        letterSpacing: 1,
+        letterSpacing: 2,
     },
     content: {
         backgroundColor: '#140025',
