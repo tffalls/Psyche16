@@ -2,10 +2,8 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    StyleSheet,
     Image,
     ImageBackground,
-    WebView
 } from 'react-native';
 
 import {
@@ -16,12 +14,6 @@ import {
     Content,
     Left,
     Body,
-    Card,
-    CardItem,
-    DeckSwiper,
-    Tab,
-    Tabs,
-    Title,
     Right,
 } from 'native-base';
 
@@ -33,6 +25,7 @@ class ScienceScreen extends Component {
     render() {
         return (
            <Container>
+                {/* Display the header, including access to the navigation menu */}
                 <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{flex: 1}}>
                         <Icon
@@ -44,8 +37,9 @@ class ScienceScreen extends Component {
                     <Body style={{flex: 1}}></Body>
                     <Right style={{flex: 1}}></Right>
                 </Header>   
+                {/* Informational content for 'Science' section */}
                 <Content contentContainerStyle={infoPageStyle.content} style={infoPageStyle.pageStyle}>
-                <ImageBackground 
+                    <ImageBackground 
                         source={require('../assets/images/backgrounds/Background.jpg')}
                         style={{
                             width: '100%',
@@ -65,6 +59,7 @@ class ScienceScreen extends Component {
                             style={infoPageStyle.animationStyle}
                         />
                         
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Psyche</Text>
                         <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Multispectral Imager</Text>
                         <Image
@@ -94,6 +89,7 @@ class ScienceScreen extends Component {
                             view. The team is based at the Applied Physics Laboratory at Johns Hopkins University.
                         </Text>
                         
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Psyche</Text>
                         <Text style={infoPageStyle.overflowPageHeadingTextSmall}>Magnetometer</Text>
                         <Image
@@ -106,6 +102,7 @@ class ScienceScreen extends Component {
                             6-foot (2-meter) boom. The team is based at Massachusetts Institute of Technology and the University of California 
                             Los Angeles.
                         </Text>
+
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Radio Science</Text>
                         <Text style={infoPageStyle.pageBodyText}>

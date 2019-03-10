@@ -54,10 +54,6 @@ export default {
         letterSpacing: 2,
         lineHeight: 30
     },
-    pagePop: {
-        width: '100%',
-        backgroundColor: '#a3415dff'
-    },
     content: {
         backgroundColor: '#140025',
         justifyContent: 'center',
@@ -100,13 +96,8 @@ export default {
         fontSize: 18,
         color: '#140025',
         letterSpacing: 2,
-        lineHeight: 30
-        
+        lineHeight: 30 
     }, 
-    cardCaptionSection: {
-        backgroundColor: '#140025',
-        borderRadius: 10,
-    },
     animationStyle: {
         marginTop: '2%',
         marginBottom: '2%',

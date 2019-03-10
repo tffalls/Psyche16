@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    StyleSheet,
     Image,
     ImageBackground,
     WebView
@@ -16,12 +15,6 @@ import {
     Content,
     Left,
     Body,
-    Card,
-    CardItem,
-    DeckSwiper,
-    Tab,
-    Tabs,
-    Title,
     Right,
 } from 'native-base';
 
@@ -33,6 +26,7 @@ class SpacecraftScreen extends Component {
     render() {
         return (
            <Container>
+                {/* Display the header, including access to the navigation menu */}
                 <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{flex: 1}}>
                         <Icon
@@ -44,8 +38,9 @@ class SpacecraftScreen extends Component {
                     <Body style={{flex: 1}}></Body>
                     <Right style={{flex: 1}}></Right>
                 </Header>   
+                 {/* Informational content for 'Spacecraft' section */}
                 <Content contentContainerStyle={infoPageStyle.content} style={infoPageStyle.pageStyle}>
-                <ImageBackground 
+                    <ImageBackground 
                         source={require('../assets/images/backgrounds/Background.jpg')}
                         style={{
                             width: '100%',
@@ -54,7 +49,6 @@ class SpacecraftScreen extends Component {
                         }}
                     >
                         <Text style={infoPageStyle.pageHeadingText}>The Spacecraft</Text>
-            
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft and solar panels, which will be built by SSL, are about the size of a singles 
                             tennis court. The body of the spacecraft is slightly bigger than a Smart Car and about as tall as a 
@@ -71,6 +65,7 @@ class SpacecraftScreen extends Component {
                             style={infoPageStyle.sketchStyle}
                         />
 
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Spacecraft Size</Text>
                         <Image
                             source={require('../assets/images/sketches/PsycheAsset_VisualizingSatteliteSize_NEW.png')}
@@ -79,6 +74,7 @@ class SpacecraftScreen extends Component {
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court.
                         </Text>
+
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Bus (Body) Size</Text>
                         <Image
@@ -89,6 +85,7 @@ class SpacecraftScreen extends Component {
                             The bus or “body” of the spacecraft is slightly bigger than a Smart Car and about as tall as a 
                             regulation basketball hoop.
                         </Text>
+
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>The Spacecraft</Text>
                         <Image
@@ -106,10 +103,12 @@ class SpacecraftScreen extends Component {
                             style={infoPageStyle.sketchStyle}
                         />
 
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Propulsion System</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The spacecraft will be propelled by solar electric propulsion.
                         </Text>
+
 
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Fully-Equipped</Text>
                         <Text style={infoPageStyle.pageBodyText}>

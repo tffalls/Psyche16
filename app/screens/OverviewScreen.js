@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    StyleSheet,
     Image,
     ImageBackground,
     WebView
@@ -18,10 +17,6 @@ import {
     Body,
     Card,
     CardItem,
-    DeckSwiper,
-    Tab,
-    Tabs,
-    Title,
     Right,
 } from 'native-base';
 
@@ -33,7 +28,8 @@ class OverviewScreen extends Component {
     render() {
         return (
            <Container>
-               <Header style={headerStyle.sectionHeadingStyle}>
+                {/* Display the header, including access to the navigation menu */}
+                <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{flex: 1}}>
                         <Icon
                             style={headerStyle.navIconStyle}
@@ -41,13 +37,12 @@ class OverviewScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
-                    <Body style={{flex:1}}>
-                        {/* <Text style={styles.pageHeadingText}>Overview</Text> */}
-                    </Body>
+                    <Body style={{flex:1}}/>
                     <Right style={{flex:1}} />
                 </Header>
+                {/* Informational content for 'Overview' */}
                 <Content contentContainerStyle={infoPageStyle.content} style={infoPageStyle.pageStyle}>
-                <ImageBackground 
+                    <ImageBackground 
                         source={require('../assets/images/backgrounds/Background.jpg')}
                         style={{
                             width: '100%',
@@ -65,6 +60,7 @@ class OverviewScreen extends Component {
                             to solar system targets.
                         </Text>
 
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}>Trajectory</Text>
                         <Image
                             source={require('../assets/images/sketches/RN_NEW_Trajectory-03.png')}
@@ -76,6 +72,8 @@ class OverviewScreen extends Component {
                             and gravity-assist in 2023. After arrival, the mission plan calls for 21 months spent 
                             at the asteroid, mapping it and studying its properties.
                         </Text>
+
+
                         <Text style={infoPageStyle.pageHeadingTextSmall}> Orbit</Text>
                         <Image
                             source={require('../assets/images/animations/OrbitsAnimation.gif')}
@@ -85,6 +83,8 @@ class OverviewScreen extends Component {
                             Once the spacecraft arrives at the asteroid in 2026, plans call for it to spend 21 months 
                             at the asteroid, performing science operations from four staging orbits, which become successively closer.
                         </Text>
+
+
                         <Card style={infoPageStyle.cardStyle}>
                             <CardItem style={infoPageStyle.cardHeader}>
                                 <Body>

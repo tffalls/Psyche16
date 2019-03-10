@@ -21,7 +21,8 @@ class HomeScreen extends Component {
     render() {
         return (
            <Container>
-               <Header style={headerStyle.sectionHeadingStyle}>
+                {/* Display the header, including access to the navigation menu */}
+                <Header style={headerStyle.sectionHeadingStyle}>
                     <Left>
                         <Icon
                             style={headerStyle.navIconStyle}
@@ -30,7 +31,7 @@ class HomeScreen extends Component {
                         />
                     </Left>
                     <Body></Body>
-               </Header>
+                </Header>
                 <Content contentContainerStyle={{
                         flex: 1,
                         alignItems: 'center',

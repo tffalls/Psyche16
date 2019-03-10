@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
-    StyleSheet,
     Image,
     ImageBackground,
     Linking,
@@ -16,12 +15,6 @@ import {
     Content,
     Left,
     Body,
-    Card,
-    CardItem,
-    DeckSwiper,
-    Tab,
-    Tabs,
-    Title,
     Right,
 } from 'native-base';
 
@@ -34,6 +27,7 @@ class TeamScreen extends Component {
     render() {
         return (
             <Container>
+                {/* Display the header, including access to the navigation menu */}
                 <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{ flex: 1 }}>
                         <Icon
@@ -42,12 +36,10 @@ class TeamScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
-                    <Body style={{ flex: 1 }}>
-                        {/* <Text style={styles.pageHeadingText}>Overview</Text> */}
-                    </Body>
+                    <Body style={{ flex: 1 }} />
                     <Right style={{ flex: 1 }} />
                 </Header>
-
+                {/* Content for Psyche Team */}
                 <Content contentContainerStyle={teamPageStyle.content} style={teamPageStyle.pageStyle}>
                     <ImageBackground 
                         source={require('../assets/images/backgrounds/Background.jpg')}

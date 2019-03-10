@@ -16,12 +16,6 @@ import {
     Content,
     Left,
     Body,
-    Card,
-    CardItem,
-    DeckSwiper,
-    Tab,
-    Tabs,
-    Title,
     Right,
 } from 'native-base';
 
@@ -29,11 +23,12 @@ import Timeline from 'react-native-timeline-feed';
 
 import headerStyle from '../styles/SideMenu.style';
 import pageStyle from '../styles/TimelineStyle.style';
-import { Fonts } from '../components/Fonts';
 
 class TimelineScreen extends Component {
     constructor() {
         super()
+
+        // Data to populate the timeline
         this.data = [
             {
                 key: '1',
@@ -121,6 +116,7 @@ class TimelineScreen extends Component {
     render() {
         return (
             <Container>
+                {/* Display the header, including access to the navigation menu */}
                 <Header style={headerStyle.sectionHeadingStyle}>
                     <Left style={{ flex: 1 }}>
                         <Icon
@@ -129,11 +125,10 @@ class TimelineScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
-                    <Body style={{ flex: 1 }}>
-                        {/* <Text style={styles.pageHeadingText}>Overview</Text> */}
-                    </Body>
+                    <Body style={{ flex: 1 }} />
                     <Right style={{ flex: 1 }} />
                 </Header>
+                {/* The Timeline */}
                 <Content contentContainerStyle={pageStyle.content} style={pageStyle.pageStyle}>
                     <Text style={pageStyle.pageHeadingText}>Timeline</Text>
                     <Text />
@@ -141,11 +136,9 @@ class TimelineScreen extends Component {
                     <Timeline
                         data={this.data}
                         circleSize={20}
-                        circleColor='#a3415dff' // Light purple
                         descriptionStyle={pageStyle.timelineDescriptionStyle}
                         dotColor="#140025"
                         innerCircleType='dot'
-                        lineColor='#ed5b68ff' // Pink
                         lineWidth={4}
                         timeContainerStyle={pageStyle.timeContainerStyle}
                         timeStyle={pageStyle.timelineTimeStyle}

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    StyleSheet,
     WebView,
     Image
 } from 'react-native';
@@ -17,7 +16,6 @@ import {
     Tab,
     Tabs,
     TabHeading,
-    //Image
 } from 'native-base';
 
 import headerStyle from '../styles/SideMenu.style';
@@ -27,6 +25,7 @@ class SocialMediaScreen extends Component {
     render() {
         return (
            <Container>
+                {/* Display the header, including access to the navigation menu */}
                <Header style={headerStyle.sectionHeadingStyle} hasTabs>
                     <Left>
                         <Icon
@@ -37,6 +36,7 @@ class SocialMediaScreen extends Component {
                     </Left>
                     <Body></Body>
                 </Header>
+                {/* Tabs to access various social media pages */}
                 <Tabs tabBarUnderlineStyle={pageStyle.underlineStyle} tabContainerStyle={pageStyle.tabContainer}>
                     <Tab 
                         heading={ 
