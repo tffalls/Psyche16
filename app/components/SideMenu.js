@@ -116,14 +116,14 @@ class SideMenu extends Component {
                             style={styles.view}
                             onPress={this.navigateToScreen('Timeline')}
                         >
-                            {this.checkFocus('Timeline', 2)}
+                            {this.checkFocus('Timeline', 1)}
                         </Text>
                         
                         <Text
                             style={styles.view}
                             onPress={this.navigateToScreen('Social Media')}
                         >
-                            {this.checkFocus('Social Media', 3)}
+                            {this.checkFocus('Social Media', 2)}
                         </Text>
                     </Content>
                 </ScrollView>

@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+
 import {Fonts} from '../components/Fonts';
 
 export default {
@@ -11,13 +11,6 @@ export default {
         fontSize: 18,
         padding: 10,
         color: 'white',
-        letterSpacing: 2
-    },
-    navItemStyleColored: {
-        fontFamily: Fonts.RobotoLight,
-        fontSize: 18,
-        padding: 10,
-        color: '#f79f27ff',
         letterSpacing: 2
     },
     navSectionStyle: {
@@ -63,16 +56,7 @@ export default {
         padding: 16,
         backgroundColor: '#140025'
     },
-    // not used currently
-    footerContainer: {
-        padding: 20,
-        backgroundColor: 'lightgrey'
-    }, 
     highlightedPage: {
         color: '#f79f27ff',
-    },
-    navItemStyleAccordian: {
-        padding: 10,
-        color: 'white',
     },
 };

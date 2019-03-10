@@ -1,5 +1,4 @@
 import HomeScreen from '../screens/HomeScreen';
-import MissionScreen from '../screens/MissionScreen';
 import TimelineScreen from '../screens/TimelineScreen';
 import SocialMediaScreen from '../screens/SocialMediaScreen';
 import OverviewScreen from '../screens/OverviewScreen';
@@ -13,9 +12,6 @@ import SideMenu from '../components/SideMenu'
 export default DrawerNavigator({
     Home: {
         screen: HomeScreen
-    },
-    Mission: {
-        screen: MissionScreen
     },
     Timeline: {
         screen: TimelineScreen
