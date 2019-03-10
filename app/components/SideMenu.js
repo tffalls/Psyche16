@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { NavigationActions } from 'react-navigation';
-import { ScrollView, Text, View, ImageBackground } from 'react-native';
+import { ScrollView, Text, View, ImageBackground, } from 'react-native';
 import {Accordion, Body, Header, Left, Icon, Content} from 'native-base';
 import {DrawerNavigator, DrawerItems, withNavigationFocus} from 'react-navigation';
 
 import styles from '../styles/SideMenu.style';
 
+/* Title for accordion */
 const dataArray = [
     {title: <Text style={styles.accordionHeaderText}>Mission</Text>}
 ];
@@ -14,52 +15,22 @@ const dataArray = [
 class SideMenu extends Component {
     constructor(props){
         super(props)
-        this.state = {
-            toggleColor: 0,
-            whiteAccordianText: styles.navItemStyleAccordian,
-            normalAccordianText: styles.navItemStyle,
-            oldRoute: '',
-            overView: 1,
-            theAsteroid: 0,
-            theSpacecraft: 0,
-            instrumentsAndSpace: 0,
-            theTeam: 0,
-        }
+
+        // state variables
+        this.state = {}
     }
+
+    /* Handle navigating to a new screen
+    *  @param route, the screen to navigate to
+    */
     navigateToScreen = (route) => () => {
         const navigateAction = NavigationActions.navigate({
             routeName: route
         });
         this.props.navigation.dispatch(navigateAction);
     }
-    toggleColor = () => () => {
-        console.log('Here', routeName)
-        switch(routeName){
-            case 'Overview':
-                this.setState({
-                    overView: 0
-                })
-                break;
-            default:
-                break;
-        }
-    }
-    myNavigateToScreen = (route) => () => {
-        //Knows overview
-        //calls some function to change the toggle color
-        this.toggleColor()
-        //Set to state
-        this.setState({
-            oldRoute: route
-        }, () => {
-            console.log('ASDADADADAD', this.state.oldRoute)
-        })
-        
-        const navigateAction = NavigationActions.navigate({
-            routeName: route
-        });
-        this.props.navigation.dispatch(navigateAction);
-    }
+
+    /* Render the Mission accordion on the drawer menu */
     renderMissionContent = () => {
         return (
             <ImageBackground
@@ -69,9 +40,7 @@ class SideMenu extends Component {
                 }}
             >
                 <View style={styles.collapseView}>
-                    <Text style={this.state.overView ? styles.navItemStyle : styles.navItemStyleAccordian} onPress={this.myNavigateToScreen('Overview')}>
-                        {/* {this.checkFocusAcordian('Overview', 4)} */}
-                        {console.log('Color', this.state.toggleColor)}
+                    <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Overview')}>
                         Overview
                     </Text>
                     <Text style={styles.navItemStyle} onPress={this.navigateToScreen('The Asteroid')}>
@@ -90,48 +59,26 @@ class SideMenu extends Component {
             </ImageBackground>
         )
     }
+    
+    /* Update menu styling to show which page is currently selected */
     checkFocus(routeName, routeIndex){
-        console.log('Check FocusAccordian()')
         if(this.props.navigation.state.index === routeIndex){
             return (
                 <Text style={styles.highlightedPage}>
-                            {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
-                            {routeName}
+                    {routeName}
                 </Text>
             )
         }
         else{
             return (
                 <Text>
-                        {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
-                        {routeName}
-                </Text>
-            )
-        }
-    }
-    checkFocusAcordian(routeName, routeIndex){
-        // console.log('Check Focus()')
-        if(this.props.navigation.state.index === routeIndex){
-            return (
-                <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Overview')}>
-                            {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
-                            {/* {routeName} */}
-                            Overview
-                </Text>
-            )
-        }
-        else{
-            return (
-                <Text>
-                        {/* {console.log('Is this focused true?', this.props.navigation.isFocused())} */}
-                        {routeName}
+                    {routeName}
                 </Text>
             )
         }
     }
 
     render() {
-        console.log('Route state:', this.props.navigation.state.index)
         return (
             <View style={styles.container}>
                 <ScrollView>

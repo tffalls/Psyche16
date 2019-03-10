@@ -13,6 +13,13 @@ export default {
         color: 'white',
         letterSpacing: 2
     },
+    navItemStyleColored: {
+        fontFamily: Fonts.RobotoLight,
+        fontSize: 18,
+        padding: 10,
+        color: '#f79f27ff',
+        letterSpacing: 2
+    },
     navSectionStyle: {
         backgroundColor: 'transparent'
     },
