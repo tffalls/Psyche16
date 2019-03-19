@@ -3,7 +3,8 @@ import {
     View,
     Text,
     StyleSheet,
-    Alert
+    Alert,
+    Image
 } from 'react-native';
 import {
     Icon,
@@ -12,7 +13,8 @@ import {
     Body,
     Header,
     Content,
-    Left
+    Left,
+    Right
 } from 'native-base';
 
 import headerStyle from '../styles/SideMenu.style';
@@ -22,7 +24,7 @@ class HomeScreen extends Component {
         return (
            <Container>
                 {/* Display the header, including access to the navigation menu */}
-                <Header style={headerStyle.sectionHeadingStyle}>
+                <Header style={headerStyle.homeSectionHeadingStyle}>
                     <Left>
                         <Icon
                             style={headerStyle.navIconStyle}
@@ -30,7 +32,14 @@ class HomeScreen extends Component {
                             onPress={() => this.props.navigation.openDrawer()}
                         />
                     </Left>
-                    <Body></Body>
+                    <Body>
+                    </Body>
+                    <Right>
+                        <Image
+                            source={require('../assets/images/icons/nasa_insignia.png')}
+                            style={headerStyle.nasaInsigniaStyle}
+                        />
+                    </Right>
                 </Header>
                 <Content contentContainerStyle={{
                         flex: 1,

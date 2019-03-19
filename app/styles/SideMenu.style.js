@@ -32,11 +32,17 @@ export default {
         paddingBottom: 10,
         paddingLeft: 5,
         paddingRight: 5,
+        marginLeft: 10,
         color: '#f79f27ff'
     },
     sectionHeadingStyle: {
         backgroundColor: '#140025',
         borderBottomWidth: 0
+    },
+    homeSectionHeadingStyle: {
+        backgroundColor: '#140025',
+        borderBottomWidth: 0,
+        height: 130
     },
     collapseView: {
         padding: 10,
@@ -44,7 +50,13 @@ export default {
         flex: 1
     },
     icon: {
-        color: '#f79f27ff'
+        color: '#f79f27ff',
+    },
+    nasaInsigniaStyle: {
+        width: 70, 
+        height: 70, 
+        marginRight: 10, 
+        resizeMode:'contain'
     },
     accordionHeaderText: {
         fontFamily: Fonts.RobotoLight,

@@ -24,6 +24,7 @@ import headerStyle from '../styles/SideMenu.style';
 import infoPageStyle from '../styles/InfoPage.style';
 import {Fonts} from '../components/Fonts';
 
+
 class OverviewScreen extends Component {
     render() {
         return (
