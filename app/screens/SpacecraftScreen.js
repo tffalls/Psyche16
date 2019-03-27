@@ -48,7 +48,8 @@ class SpacecraftScreen extends Component {
                             flex: 1
                         }}
                     >
-                        <Text style={infoPageStyle.pageHeadingText}>The Spacecraft</Text>
+                        <Text style={infoPageStyle.pageHeadingText}>The</Text>
+                        <Text style={infoPageStyle.overflowPageHeadingText}>Spacecraft</Text>
                         <Text style={infoPageStyle.pageBodyText}>
                             The Psyche spacecraft and solar panels, which will be built by SSL, are about the size of a singles 
                             tennis court. The body of the spacecraft is slightly bigger than a Smart Car and about as tall as a 
