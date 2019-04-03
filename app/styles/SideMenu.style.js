@@ -42,7 +42,7 @@ export default {
     homeSectionHeadingStyle: {
         backgroundColor: '#140025',
         borderBottomWidth: 0,
-        height: 130
+        height: 105
     },
     collapseView: {
         padding: 10,
@@ -53,8 +53,8 @@ export default {
         color: '#f79f27ff',
     },
     nasaInsigniaStyle: {
-        width: 70, 
-        height: 70, 
+        width: 50, 
+        height: 50, 
         marginRight: 10, 
         resizeMode:'contain'
     },
