@@ -16,3 +16,19 @@ Psyche mobile app competition capstone project for team Arrival (2019)
 node_modules/react-native/scripts/ios-install-third-party.sh` on the command line and try running the project again.
 
 ### Android
+1. Clone the repository
+2. Navigate into the project and run `yarn` or `npm` depending on what you have setup
+3. On the command line, run `react-native start`.  If that doesn't work, run `react-native start --reset-cache`.
+4. Run `react-native run-android`
+5. Ensure you have a connected device and it should deploy to that device
+
+### Android
+1. Clone the repository
+2. Navigate into the project and run `yarn` or `npm` depending on what you have setup
+3. https://github.com/f111fei/react-native-unity-view
+4. Comment out `bundle{...}` in the build.gradle
+5. On the command line, run `react-native start`.  If that doesn't work, run `react-native start --reset-cache`.
+6. Run `react-native run-android`
+7. Ensure you have a connected device and it should deploy to that device
+
+
