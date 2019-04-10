@@ -22,7 +22,7 @@ node_modules/react-native/scripts/ios-install-third-party.sh` on the command lin
 4. Run `react-native run-android`
 5. Ensure you have a connected device and it should deploy to that device
 
-### Android
+### Android with Unity (Not included on github, use unity cloud to access unity game - https://unity3d.com/unity/features/cloud-build )
 1. Clone the repository
 2. Navigate into the project and run `yarn` or `npm` depending on what you have setup
 3. https://github.com/f111fei/react-native-unity-view
